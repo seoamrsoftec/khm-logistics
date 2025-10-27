@@ -11,11 +11,11 @@ import styles from "./BannerHeroSlider.module.css";
 import Link from "next/link";
 
 const slideData = [
-  { bgImage: "/images/bannerslider/sl-1.jpg" },
-  { bgImage: "/images/bannerslider/sl-2.jpg" },
-  { bgImage: "/images/bannerslider/sl-3.jpg" },
-  { bgImage: "/images/bannerslider/sl-4.jpg" },
-  { bgImage: "/images/bannerslider/sl-5.jpg" },
+  { bgImage: "/images/bannerslider/1.png" },
+  { bgImage: "/images/bannerslider/2.png" },
+  { bgImage: "/images/bannerslider/3.png" },
+  { bgImage: "/images/bannerslider/4.png" },
+  { bgImage: "/images/bannerslider/5.png" },
 ];
 
 export default function BannerHeroSlider() {
@@ -66,34 +66,7 @@ export default function BannerHeroSlider() {
                     <span>Get a Quote</span>
                   </Link>
                 </div>
-              </div>
-        <div className={styles.Circle}>
-                <svg
-                  width="100%"
-                  height="100%"
-                  viewBox="0 0 620 420"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="200"
-                    cy="200"
-                    r="200"
-                    className={styles.CircleOne}
-                    fill="#0044A5"
-                    fillOpacity="0.5"
-                  />
-                  <circle
-                    cx="420"
-                    cy="220"
-                    r="200"
-                    className={styles.CircleTwo}
-                    fill="#ecf0f1"
-                    fillOpacity="0.5"
-                    stroke="#fff"
-                    strokeWidth="0.5"
-                  />
-                </svg>
-              </div>
+              </div>        
             </div>
           </SwiperSlide>
         ))}
