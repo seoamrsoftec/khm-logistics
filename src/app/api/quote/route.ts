@@ -17,17 +17,28 @@ export async function POST(req: Request) {
 
     // Send the email
     await transporter.sendMail({
-      from: `${name} <info@sydneycontainer.com.au>`,
-      to: "info@sydneycontainer.com.au",
-      subject: `${name} - Contact Inquiry - Sydney Container Forwarders`,
+      from: `${name} <info@khmlogistics.com>`,
+      to: "info@khmlogistics.com",
+      subject: `${name} - Contact Inquiry - KHM Logistics`,
       html: `
-        Hello Sydney Container Forwarders Team,<br><br>
-        Enquiry From: <b>${name}</b><br><br>
-        Contact Number: <b>${phone}</b><br><br>
-        Email: <b>${email}</b><br><br>
-        Suburb: <b>${suburb}</b><br><br>
-        Message: <b>${description}</b><br><br>
-        <b style="color:green">Best Regards</b><br>${name}<br><br>
+        <div style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
+          <p>Hello <b>KHM Logistics</b> Team,</p>
+          <p>You have received a new contact inquiry through your website:</p>
+
+          <p><b>Name:</b> ${name}</p>
+          <p><b>Contact Number:</b> ${phone}</p>
+          <p><b>Email:</b> ${email}</p>
+          <p><b>Suburb / Location:</b> ${suburb}</p>
+          <p><b>Message:</b><br>${description}</p>
+
+          <br>
+          <p style="color: #0066cc;">Best Regards,<br>${name}</p>
+          <hr style="border:none;border-top:1px solid #ddd;margin:20px 0;">
+          <p style="font-size: 13px; color: #555;">
+            This message was sent from the contact form on the <b>KHM Logistics</b> website.<br>
+            Specialists in transportation, transloading, and hazmat solutions — helping businesses move cargo efficiently and securely.
+          </p>
+        </div>
       `,
     });
 
@@ -40,3 +51,4 @@ export async function POST(req: Request) {
     );
   }
 }
+
