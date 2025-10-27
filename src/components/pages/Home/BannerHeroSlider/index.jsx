@@ -1,14 +1,14 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, EffectFade } from "swiper/modules";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
 import styles from "./BannerHeroSlider.module.css";
-import Link from "next/link";
 
 const slideData = [
   { bgImage: "/images/bannerslider/1.png" },
@@ -19,17 +19,38 @@ const slideData = [
 ];
 
 export default function BannerHeroSlider() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  // ✅ Preload all images before showing slider
+  useEffect(() => {
+    let loaded = 0;
+    slideData.forEach((slide) => {
+      const img = new Image();
+      img.src = slide.bgImage;
+      img.onload = () => {
+        loaded++;
+        if (loaded === slideData.length) setIsLoaded(true);
+      };
+    });
+  }, []);
+
+  if (!isLoaded) {
+    // ✅ prevent flicker on initial mount
+    return <div className={styles.PreloadBg}></div>;
+  }
+
   return (
     <section className={styles.HeroSection}>
       <Swiper
-        modules={[ Pagination, Autoplay, EffectFade]}
+        modules={[Pagination, Autoplay, EffectFade]}
         effect="fade"
         fadeEffect={{ crossFade: true }}
-        spaceBetween={0}
         slidesPerView={1}
-        loop
+        spaceBetween={0}
+        loop={true}
+        speed={1200}
         autoplay={{
-          delay: 3500,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
@@ -41,29 +62,28 @@ export default function BannerHeroSlider() {
               className={styles.HeroContainer}
               style={{
                 backgroundImage: `url(${slide.bgImage})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
               }}
             >
-              <div className="text-center relative z-10 text-white max-w-[1000px] m-auto">
+              <div className={styles.HeroOverlay}></div>
+              <div className={`${styles.HeroContent} text-center text-white`}>
                 <h1 className={styles.SubTitle}>
-                  Container Transport Company Sydney
+                  Drayage Services – Hazmat & Transloading KHM Logistics
                 </h1>
-                <h2 className={styles.HeroTitle}>
-                  <span className={styles.TitleHighlight}>Sydney</span> Container
-                  Forwarders: Your Complete Containers Solutions
-                </h2>
-                <div className="hero-text mt-3 mb-3 xl:text-xl md:text-md sm:text-sm">
-                  From local deliveries to long-term storage, we provide complete
-                  logistics support throughout Sydney with a focus on reliability,
-                  speed, and customer satisfaction.
+
+                <div className={styles.HeroText}>
+                  Drayage Services – Reliable Freight Solutions by KHM Logistics.
+                  KHM Logistics is your trusted partner for Drayage Trucking in
+                  the USA. We offer reliable & excellence transportation,
+                  transloading, and hazmat solutions, helping businesses move
+                  cargo efficiently and securely across the country.
                 </div>
-                <div className="flex justify-center gap-4 mt-8">                 
+
+                <div className={styles.HeroButtons}>
                   <Link href="/contact-us" className="btn">
                     <span>Contact Us</span>
                   </Link>
                 </div>
-              </div>        
+              </div>
             </div>
           </SwiperSlide>
         ))}

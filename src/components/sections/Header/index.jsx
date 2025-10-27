@@ -11,6 +11,7 @@ import Logo from '@/components/svg/Logo';
 import LogoWhite from '@/components/svg/LogoWhite';
 import Btn from '@/components/ui/BtnBorder';
 import Image from 'next/image';
+import Container from '../Container';
 
 export default function Header() {
   const { sticky } = useSticky();
@@ -42,10 +43,11 @@ const Navigation = [
       title: 'Services',
       linkSource:'/freight-forwarding-sydney',
       items: [
-        { label: '', href: '/#' },
-        { label: '', href: '/#' },
-        { label: '', href: '/#' },
-        { label: '', href: '/#' }
+        { label: 'Supply Chain', href: '/#' },
+        { label: 'Transloading Services', href: '/#' },
+        { label: 'Warehouse Services', href: '/#' },
+        { label: 'Intermodal Services', href: '/#' },
+        { label: 'Hazmat Services', href: '/#' }
       ] 
     },
     { 
@@ -61,7 +63,8 @@ const Navigation = [
   return (
     <>
     <header className={`${styles.headerContainer} ${sticky ? styles.headerSticky : ""}`}>
-            <div className={styles.navbar}>
+           <Container>
+           <div className={styles.navbar}>
                 <div className={styles.navbarLogo}>
                     <Link href="/" title="Container Transport Companies Sydney" className="text-black ">
                         <Image src="/images/logo/logo-khm.png" alt="Sydney Container Logo" width={500} height={202} className="w-[150px] h-auto"/>
@@ -73,7 +76,7 @@ const Navigation = [
                             <li className={styles.NavigationLi} key={list}>
                                 <Link alt="" href={Menu.linkSource} className={styles.NavigationLink}>{Menu.title}</Link>
                                 {Menu.items && Menu.items.length > 0 && (
-                                    <ul className={styles.SubNav}>
+                                   <ul className={`${styles.SubNav} space-y-3`}>
                                         {Menu.items.map((item, index) => (
                                             <li key={index} className={styles.SubNavItem}>
                                                 <Link href={item.href} className={styles.SubNavItemLink}>
@@ -101,6 +104,7 @@ const Navigation = [
                 </button>
               
             </div>
+           </Container>
     </header>
     <div className={`${styles.MobileMenu} ${isMenuOpen ? styles.open : styles.closed}`}>
         <div>

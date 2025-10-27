@@ -1,5 +1,6 @@
 
 
+import AboutSection from "@/components/pages/Home/AboutSection";
 import BannerHeroSlider from "@/components/pages/Home/BannerHeroSlider";
 
 export async function generateMetadata() {
@@ -30,6 +31,7 @@ export default function HomePage() {
   return (
     <>
         <BannerHeroSlider/>
+        <AboutSection/>
         
     </>
   );
