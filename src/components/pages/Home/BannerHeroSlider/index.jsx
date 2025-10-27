@@ -58,12 +58,9 @@ export default function BannerHeroSlider() {
                   logistics support throughout Sydney with a focus on reliability,
                   speed, and customer satisfaction.
                 </div>
-                <div className="flex justify-center gap-4">
-                  <Link href="tel:+61415426195" className="btn secondary">
-                    <span>+61 415 426 195</span>
-                  </Link>
+                <div className="flex justify-center gap-4 mt-8">                 
                   <Link href="/contact-us" className="btn">
-                    <span>Get a Quote</span>
+                    <span>Contact Us</span>
                   </Link>
                 </div>
               </div>        

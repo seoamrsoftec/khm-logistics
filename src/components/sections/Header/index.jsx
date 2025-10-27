@@ -10,6 +10,7 @@ import Button from '@/components/ui/BtnBorder';
 import Logo from '@/components/svg/Logo';
 import LogoWhite from '@/components/svg/LogoWhite';
 import Btn from '@/components/ui/BtnBorder';
+import Image from 'next/image';
 
 export default function Header() {
   const { sticky } = useSticky();
@@ -28,37 +29,33 @@ export default function Header() {
 
 const Navigation = [
     { 
-      title: 'Transport Services', 
-      linkSource:'',
-      items: [
-        { label: 'Sideloader service', href: '/sideloader-service-sydney' },
-        { label: 'Transport Container', href: '/transport-container-sydney'},
-        { label: 'Import Export Container', href: '/import-export-container-sydney' },
-        { label: 'Oversize/Out of Gauge Cargo', href: '/oversize-out-gauge-cargo-sydney' },
-        { label: 'LCL - Less than Container Load', href: '/lcl-sydney' },
-        { label: 'Linehaul Transport', href: '/linehaul-transport-sydney' },
-        { label: 'Refrigerated Transport', href: '/refrigerated-transport-sydney' }
-      ]
+      title: 'Home', 
+      linkSource:'/',      
     },
 
     {
-      title: 'Storage & Warehouse', 
-      linkSource:'/storage-and-warehouse-sydney',
+      title: 'About Us', 
+      linkSource:'/#',
+     
+    },
+    { 
+      title: 'Services',
+      linkSource:'/freight-forwarding-sydney',
       items: [
-        { label: 'Container Storage', href: '/container-storage-sydney' },
-        { label: 'Cargo Storage', href: '/cargo-storage-sydney' },
-        { label: 'Refrigerated Storage', href: '/refrigerated-storage-sydney' },
-        { label: 'Cargo Unpack', href: '/cargo-unpack-sydney' }
-      ]
+        { label: '', href: '/#' },
+        { label: '', href: '/#' },
+        { label: '', href: '/#' },
+        { label: '', href: '/#' }
+      ] 
     },
     { 
-      title: 'Freight Forwarding',
-      linkSource:'/freight-forwarding-sydney' 
+      title: 'Why Choose Us', 
+      linkSource:'#' 
     },
     { 
-      title: 'Customs Clearance', 
-      linkSource:'/customs-clearance-sydney' 
-    }
+        title: 'Contact Us', 
+        linkSource:'#' 
+      },
   ]; 
 
   return (
@@ -66,8 +63,8 @@ const Navigation = [
     <header className={`${styles.headerContainer} ${sticky ? styles.headerSticky : ""}`}>
             <div className={styles.navbar}>
                 <div className={styles.navbarLogo}>
-                    <Link href="/" title="Container Transport Companies Sydney" className="text-black w-[80px] lg:w-[120px]">
-                        <Logo/>
+                    <Link href="/" title="Container Transport Companies Sydney" className="text-black ">
+                        <Image src="/images/logo/logo-khm.png" alt="Sydney Container Logo" width={500} height={202} className="w-[120px] h-auto"/>
                     </Link>
                 </div>
                 <div className='hidden xl:flex'>
@@ -134,10 +131,7 @@ const Navigation = [
                 ))}
             </ul>
         </div>
-        <div className="flex justify-center gap-4 p-4">
-            <Link href="tel:+61415426195" className='btn secondary'>
-                <span>+61 415 426 195</span>
-            </Link>
+        <div className="flex justify-center gap-4 p-4">           
             <Link href="/contact-us" className='btn'>
                 <span>Get a Quote</span>
             </Link>
