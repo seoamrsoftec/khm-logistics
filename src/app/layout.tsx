@@ -1,25 +1,25 @@
-import { GoogleAnalytics } from '@next/third-parties/google'
-import { Roboto, Akshar } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { Inter, Quicksand } from "next/font/google";
 import "./globals.css";
-import Header from '@/components/sections/Header';
-import Footer from '@/components/sections/Footer';
+import Header from "@/components/sections/Header";
+import Footer from "@/components/sections/Footer";
 
 export const metadata = {
-    title: `My Cab Portal - Taxi Service Website at Rs 1000 a Month Only`,
-    description: `Get your taxi service website with My Cab Portal for just ₹1000/month! Create your professional taxi booking website in just 5 easy steps. Fast, affordable, and hassle-free!`,
-  // Other metadata...
+  title: `KHM Logistics - Transportation & Logistics Services`,
+  description: `KHM Logistics offers reliable transportation and logistics services. Contact us for efficient freight solutions tailored to your needs.`,
 };
-const roboto = Roboto({
+
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
-const akshar = Akshar({
+
+const quicksand = Quicksand({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
-
 
 export default function RootLayout({
   children,
@@ -28,11 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className} suppressHydrationWarning={true}>
-        <Header/>
+      <body className={inter.className} suppressHydrationWarning={true}>
+        <Header />
         {children}
-        <Footer/>
-        {/* <GoogleAnalytics gaId="G-DDEHRD87EX" /> */}
+        <Footer />
       </body>
     </html>
   );

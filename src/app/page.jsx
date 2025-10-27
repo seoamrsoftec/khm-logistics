@@ -10,8 +10,8 @@ import WhyChoose from "@/components/pages/Home/WhyChoose";
 
 export async function generateMetadata() {
     const siteUrl = 'https://www.sydneycontainer.com.au';
-    const title = 'Professional Shipping Container Transport Companies Sydney';
-    const description = 'Cargo Logistics is a top professional shipping container transport company in Sydney. From 20ft container transport to side loader transport, contact us.';
+    const title = '';
+    const description = '';
     return {
         title, description,
         alternates: {
@@ -19,10 +19,10 @@ export async function generateMetadata() {
         },
         openGraph: {
             title, description,
-            siteName: 'Sydney Container Forwarders',
+            siteName: 'KHM Logistics',
             images: [
                 {
-                url: `${siteUrl}/images/container-transport-company-sydney.jpg`,
+                url: `${siteUrl}/images/khm-og-image.jpg`,
                 width: 1200,
                 height: 630,
                 },
@@ -36,11 +36,11 @@ export default function HomePage() {
   return (
     <>
         <BannerHeroSlider/>
-        <About/>
+        {/* <About/>
         <ServicesSectionTwo/>
         <WhyChoose/>  
         <FinalCTA/>
-        <TestimonialSlider/>
+        <TestimonialSlider/> */}
     </>
   );
 }
