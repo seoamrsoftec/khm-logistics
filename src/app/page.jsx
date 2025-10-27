@@ -3,7 +3,7 @@
 import BannerHeroSlider from "@/components/pages/Home/BannerHeroSlider";
 
 export async function generateMetadata() {
-    const siteUrl = 'https://www.sydneycontainer.com.au';
+    const siteUrl = 'https://khm-logistics.vercel.app/';
     const title = '';
     const description = '';
     return {

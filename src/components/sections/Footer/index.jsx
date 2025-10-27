@@ -16,11 +16,11 @@ export default function Footer() {
                   <div className="footer-col">
                     <div className={styles.Footerlogo}>
                       <div>
-                        <LogoWhite />
+                         <Image src="/images/logo/logo-wht.png" alt="Sydney Container Logo" width={500} height={202} className="w-[150px] h-auto"/>
                       </div>
                     </div>
                     <h3 className={styles.footerTitle}>
-                      About Sydney Container
+                      About KHM Logistics
                     </h3>
                     <p>
                       From local deliveries to long-term storage, we provide
@@ -125,15 +125,15 @@ export default function Footer() {
                     <ul className=" grid gap-3">
                       <li>
                         <Link href="mailto:info@sydneycontainer.com.au">
-                          info@sydneycontainer.com.au
+                          info@khmlogistics.com
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link href="tel:0430 960 265">0430 960 265</Link>
                       </li>
                       <li>
                         <Link href="tel:0415 426 195">0415 426 195</Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>

@@ -1,12 +1,12 @@
 export const baseMetadata = {
-    siteName: "Top 10 Taxi Services",
+    siteName: "KHM Logistics",
     openGraph: {
-      siteName: "Top 10 Taxi Services",
+      siteName: "KHM Logistics",
       locale: "en_US",
       type: "website",
       images: [
         {
-          url: "/images/default-og-image.jpg", // Default OG image
+          url: "/images/default-og-image.jpg", 
           width: 1200,
           height: 630,
           type: "image/jpg",

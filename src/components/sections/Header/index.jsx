@@ -64,7 +64,7 @@ const Navigation = [
             <div className={styles.navbar}>
                 <div className={styles.navbarLogo}>
                     <Link href="/" title="Container Transport Companies Sydney" className="text-black ">
-                        <Image src="/images/logo/logo-khm.png" alt="Sydney Container Logo" width={500} height={202} className="w-[120px] h-auto"/>
+                        <Image src="/images/logo/logo-khm.png" alt="Sydney Container Logo" width={500} height={202} className="w-[150px] h-auto"/>
                     </Link>
                 </div>
                 <div className='hidden xl:flex'>
@@ -107,7 +107,7 @@ const Navigation = [
             <div className={`${styles.MobileMenuHeader}`}>
                 <div className={styles.navbarLogo}>
                     <Link href="/" title="Container Transport Companies Sydney" className="text-black">
-                        <Logo/>
+                     <Image src="/images/logo/logo-khm.png" alt="Sydney Container Logo" width={500} height={202} className="w-[150px] h-auto"/>
                     </Link>
                 </div>
                 <div className={styles.MobileMenuClose} onClick={() => setIsMenuOpen(false)}><CgClose/></div>

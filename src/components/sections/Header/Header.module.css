@@ -176,8 +176,8 @@
     position: relative;
 }
 .NavigationLink {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: bold;
     padding: 5px 0;
     display: block;
 }
@@ -186,7 +186,7 @@
     position: absolute;
     left: 0;
     top: 110%;
-    border-top: solid 1px var(--primary);
+   
     visibility: hidden;
     opacity: 0;
     transition: var(--transition) ;
@@ -196,9 +196,7 @@
     opacity: 1;
     top: 100%;
 }
-.SubNavItem {
-    border-bottom: solid 1px var(--primary);
-}
+
 .SubNavItemLink {
     padding: 5px 15px;
     display: block;
