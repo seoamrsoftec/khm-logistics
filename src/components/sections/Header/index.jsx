@@ -10,6 +10,7 @@ import Button from '@/components/ui/BtnBorder';
 import Logo from '@/components/svg/Logo';
 import LogoWhite from '@/components/svg/LogoWhite';
 import Btn from '@/components/ui/BtnBorder';
+import Image from 'next/image';
 
 export default function Header() {
   const { sticky } = useSticky();
@@ -28,17 +29,8 @@ export default function Header() {
 
 const Navigation = [
     { 
-      title: 'Transport Services', 
-      linkSource:'',
-      items: [
-        { label: 'Sideloader service', href: '/sideloader-service-sydney' },
-        { label: 'Transport Container', href: '/transport-container-sydney'},
-        { label: 'Import Export Container', href: '/import-export-container-sydney' },
-        { label: 'Oversize/Out of Gauge Cargo', href: '/oversize-out-gauge-cargo-sydney' },
-        { label: 'LCL - Less than Container Load', href: '/lcl-sydney' },
-        { label: 'Linehaul Transport', href: '/linehaul-transport-sydney' },
-        { label: 'Refrigerated Transport', href: '/refrigerated-transport-sydney' }
-      ]
+      title: 'Home', 
+      linkSource:'/',      
     },
 
     {
@@ -66,8 +58,8 @@ const Navigation = [
     <header className={`${styles.headerContainer} ${sticky ? styles.headerSticky : ""}`}>
             <div className={styles.navbar}>
                 <div className={styles.navbarLogo}>
-                    <Link href="/" title="Container Transport Companies Sydney" className="text-black w-[80px] lg:w-[120px]">
-                        <Logo/>
+                    <Link href="/" title="Container Transport Companies Sydney" className="text-black ">
+                       <Image src="/images/logo/khm-logo.png" alt="Container Transport Companies Sydney" width={1135} height={458}  priority className='w-[200px] h-auto'  />
                     </Link>
                 </div>
                 <div className='hidden xl:flex'>
