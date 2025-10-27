@@ -1,0 +1,102 @@
+.HeroSection {
+    padding: 120px 0;
+    padding-top: 150px;
+    overflow: hidden;
+}
+.HeroContainer {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+@media (min-width:768px) {
+    .HeroSection {
+        padding: 0;
+    }
+    .HeroContainer {
+        height: 100vh;
+    }
+}
+@media (max-width:1450px) {
+
+}
+.HeroTitle{
+  font-size: 50px;
+  line-height:60px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.SubTitle {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+@media (max-width:1100px) {
+ .HeroTitle{
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+@media (max-width:768px) {
+   .HeroTitle{
+        font-size: 28px;
+        line-height:38px;
+    }
+    .SubTitle {
+        font-size: 20px;
+    }
+}
+.TitleHighlight {
+    position: relative;
+}
+.TitleHighlight:after {
+    content: "";
+    height: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--secondary);
+}
+
+.Circle {
+  width: 100% ;
+  max-width: 1200px;
+  padding: 15px;
+  min-width: 500px;
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 35px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+@media (min-width:1450px) {
+    .Circle {
+        min-width: 1200px;
+    }
+}
+@media (min-width:768px) {
+    .Circle {
+        min-width: 900px;
+    }
+}
+.CircleOne {
+    fill: var(--primary);
+}
+.CircleTwo {
+    fill: var(--black);
+}
+@media (max-width:767px) {
+    .HeroSection {
+        padding: 0;
+        height: 80vh;
+    }
+    .Heroswiper{
+        height: 80vh;
+    }
+}

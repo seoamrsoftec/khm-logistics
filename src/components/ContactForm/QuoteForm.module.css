@@ -1,0 +1,11 @@
+.input {
+    padding: 10px;
+    border: solid 2px var(--primary);
+    outline: none;
+    border-radius: 0;
+    color: #000;
+    width: 100%;
+}
+textarea.input{
+    height: 100px;
+}

@@ -1,0 +1,44 @@
+.WhyFeatures {
+    position: relative;
+    display: block;
+    background: #fff;
+    box-shadow: 0 0 28px #00000014;
+    border-left: 2px solid var(--secondary);
+    padding: 25px 25px 21px;
+}
+.Title {
+    
+}
+.WhyChooseCta {
+    position: relative;
+}
+.WhyCta {
+    background: var(--primary);
+    padding: 50px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.WhyChooseCta .float {
+    position: absolute;
+    right: 20%;
+    top: 95%;
+    animation: updown 1.5s ease-in-out infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media (max-width:767px) {
+    .WhyCta {
+        padding: 15px;
+        margin-bottom: 200px;
+    }
+}

@@ -1,0 +1,85 @@
+.HeroSection {
+    background: url("/images/banner1.jpg") center center;
+    background-size: cover;
+    padding: 100px 0;
+    padding-top: 150px;
+    overflow: hidden;
+    position: relative;
+}
+.HeroSection:before {
+    content: "";
+    background: #012559;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+}
+@media (max-width:1450px) {
+    .HeroContainer {
+        max-width: 1000px;
+    }
+}
+.HeroTitle{
+  font-size: 50px;
+  line-height:60px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.SubTitle {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+@media (max-width:1100px) {
+    .HeroContainer {
+        max-width: 900px;
+    }
+  .HeroTitle{
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+@media (max-width:768px) {
+    .HeroContainer {
+        max-width: 700px;
+    }
+    .HeroTitle{
+        font-size: 28px;
+        line-height:38px;
+    }
+    .SubTitle {
+        font-size: 20px;
+    }
+}
+.TitleHighlight {
+    position: relative;
+}
+.TitleHighlight:after {
+    content: "";
+    height: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--secondary);
+}
+
+.Circle {
+  width: 100% ;
+  max-width: 500px;
+  padding: 15px;
+  min-width: 500px;
+  position: absolute;
+  right: 0;
+  top: calc(50% + 35px);
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.CircleOne {
+    fill: var(--primary);
+}
+.CircleTwo {
+    fill: var(--black);
+}
