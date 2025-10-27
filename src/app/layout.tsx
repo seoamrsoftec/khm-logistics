@@ -5,8 +5,9 @@ import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
 
 export const metadata = {
-  title: `KHM Logistics - Transportation & Logistics Services`,
-  description: `KHM Logistics offers reliable transportation and logistics services. Contact us for efficient freight solutions tailored to your needs.`,
+  title: `My Cab Portal - Taxi Service Website at Rs 1000 a Month Only`,
+  description: `Get your taxi service website with My Cab Portal for just ₹1000/month! Create your professional taxi booking website in just 5 easy steps. Fast, affordable, and hassle-free!`,
+  // Other metadata...
 };
 
 const inter = Inter({
