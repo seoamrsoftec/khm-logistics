@@ -32,92 +32,67 @@ export default function Footer() {
               </div>
               <div className="col-span-12 md:col-span-4 lg:col-span-2">
                 <div className="footer-col">
+                  <h3 className={styles.footerTitle}>Home</h3>
+                  <div className={styles.footerLinks}>
+                    <ul className=" grid gap-3">
+                      <li>
+                        <Link href="/#">
+                         About
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/#">
+                          Services
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/#">
+                         Why Choose Us
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/#">
+                         Contact
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-span-6 md:col-span-4 lg:col-span-3">
+                <div className="footer-col">
                   <h3 className={styles.footerTitle}>Services</h3>
                   <div className={styles.footerLinks}>
                     <ul className=" grid gap-3">
                       <li>
-                        <Link href="/transport-container-sydney">
-                          Transport Container
+                        <Link href="/#">
+                        Supply Chain
                         </Link>
                       </li>
                       <li>
-                        <Link href="/storage-and-warehouse-sydney">
-                          Storage & Warehouse
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/freight-forwarding-sydney">
-                          Freight Forwarding
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/Ccustoms-clearance-sydney">
-                          Customs Clearance
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-span-6 md:col-span-4 lg:col-span-2">
-                <div className="footer-col">
-                  <h3 className={styles.footerTitle}>Transport Container</h3>
-                  <div className={styles.footerLinks}>
-                    <ul className=" grid gap-3">
-                      <li>
-                        <Link href="/import-export-container-sydney">
-                          Import Export Container
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/oversize-out-gauge-cargo-sydney">
-                          Oversize/Out of Gauge Cargo
+                        <Link href="/#">
+                        Transloading Services
                         </Link>
                       </li>
                       <li>
                         <Link href="/lcl-sydney">
-                          LCL - Less than Container Load
+                        Warehouse Services
                         </Link>
                       </li>
                       <li>
-                        <Link href="/linehaul-transport-sydney">
-                          Linehaul Transport
+                        <Link href="/#">
+                        Intermodal Services
                         </Link>
                       </li>
                       <li>
-                        <Link href="/refrigerated-transport-sydney">
-                          Refrigerated Transport
+                        <Link href="/#">
+                        Hazmat Services
                         </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
-              </div>
-              <div className="col-span-6 md:col-span-4 lg:col-span-2">
-                <div className="footer-col">
-                  <h3 className={styles.footerTitle}>Storage & Warehouse</h3>
-                  <div className={styles.footerLinks}>
-                    <ul className=" grid gap-3">
-                      <li>
-                        <Link href="/container-storage-sydney">
-                          Container Storage
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/cargo-storage-sydney">Cargo Storage</Link>
-                      </li>
-                      <li>
-                        <Link href="/refrigerated-storage-sydney">
-                          Refrigerated Storage
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/cargo-unpack-sydney">Cargo Unpack</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              </div>             
               <div className="col-span-12 md:col-span-4 lg:col-span-3">
                 <div className="footer-col">
                   <h3 className={styles.footerTitle}>Contact</h3>
