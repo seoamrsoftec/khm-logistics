@@ -22,16 +22,16 @@ const steps = [
   },
   {
     id: "03",
-    title: "Paperwork",
+    title: "Order Delivered",
     desc:
-      "From Bills of Lading (BOL) to customs documents, we manage every detail to ensure smooth pickup, transit, and delivery.",
+      "When the driver arrives at the warehouse, we offer 2 hours of free unloading time. After unloading, customers receive a signed Delivery Order as POD.",
     image: "/images/home/service-section/3.png",
   },
   {
     id: "04",
-    title: "Delivery",
+    title: "Order Payment",
     desc:
-      "Your shipment is monitored from dispatch to delivery. We provide real-time and proactive updates — and confirm delivery with all required proof.",
+      "Once the out-gate ticket confirms shipment completion, our accounting team processes payment by generating invoices and handling the billing.",
     image: "/images/home/service-section/4.png",
   },
 ];

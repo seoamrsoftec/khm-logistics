@@ -36,7 +36,7 @@ const Navigation = [
 
     {
       title: 'About Us', 
-      linkSource:'/#',
+      linkSource:'/about',
      
     },
     { 
