@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./AboutSection.module.css";
 import Container from "@/components/sections/Container";
+import SectionTitle from "@/components/sections/SectionTitle";
 
 export default function AboutSection() {
   return (
@@ -23,9 +24,7 @@ export default function AboutSection() {
 
         <div className={styles.content}>
         <p className={styles.subheading}>About Us</p>
-        <h2 className={styles.heading}>
-            Our Inspiration For Efficient Cargo Solutions in 2025.
-        </h2>
+         <SectionTitle title=" Our Inspiration For Efficient Cargo Solutions in 2025." />
 
         <p className={styles.text}>
             At{" "}

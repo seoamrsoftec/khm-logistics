@@ -87,7 +87,7 @@ a {
   /* color: var(--primary); */
 }
 a:hover {
-  color: var(--primary);
+  color: var(--secondary);
 }
 .transition {
   transition: var(--transition);
