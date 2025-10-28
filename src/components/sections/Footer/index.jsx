@@ -11,7 +11,7 @@ export default function Footer() {
         <Container>
           <div className={styles.Footerinner}>
             <div className="grid grid-cols-12 px-[10px] footer_grid justify-center gap-y-10 gap-3 xl:gap-10 text-[14px] md:text-[16px]">
-              <div className="col-span-12 md:col-span-4 lg:col-span-3">
+              <div className="col-span-12 md:col-span-4 lg:col-span-4">
                 <div className="">
                   <div className="footer-col">
                     <div className={styles.Footerlogo}>
@@ -30,11 +30,16 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="col-span-12 md:col-span-4 lg:col-span-2">
+              <div className="col-span-12 md:col-span-4 lg:col-span-3">
                 <div className="footer-col">
-                  <h3 className={styles.footerTitle}>Home</h3>
+                  <h3 className={styles.footerTitle}>Quick Links</h3>
                   <div className={styles.footerLinks}>
                     <ul className=" grid gap-3">
+                    <li>
+                        <Link href="/">
+                         Home
+                        </Link>
+                      </li>
                       <li>
                         <Link href="/#">
                          About
@@ -93,7 +98,7 @@ export default function Footer() {
                   </div>
                 </div>
               </div>             
-              <div className="col-span-12 md:col-span-4 lg:col-span-3">
+              <div className="col-span-12 md:col-span-4 lg:col-span-2">
                 <div className="footer-col">
                   <h3 className={styles.footerTitle}>Contact</h3>
                   <div className={styles.footerLinks}>
@@ -112,9 +117,9 @@ export default function Footer() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-6 ">
+                {/* <div className="mt-6 ">
                   <h3 className={styles.footerTitle}>
-                    Follow Sydney Container{" "}
+                    Follow KHM Logistics
                   </h3>
                   <div className="footer-social grid grid-cols-5 mt-3">
                     <Link href="#" target="_blank" rel="noopener noreferrer">
@@ -163,20 +168,20 @@ export default function Footer() {
                       />
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="footer-bottom border-t-[1px] mt-8 pt-4 md:pb-4">
               <div className="md:flex justify-center items-center text-center">
-                <div>
+                <div className="text-[14px]">
                   ©{currentYear}{" "}
                   <span className={styles.footerLinks}>
-                    Sydney Container Website Development by{" "}
+                  KHM Logistics Website Development by {" "}
                     <Link
                       href="https://www.amrsoftec.com/"
-                      className="text-blue-500 hover:underline"
+                      className="text-[--secondary] hover:underline"
                     >
-                      AMRsoftec
+                       AMRsoftec
                     </Link>
                   </span>
                 </div>

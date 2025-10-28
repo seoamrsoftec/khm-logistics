@@ -29,7 +29,9 @@
 }
 .footerTitle {
     font-size: 22px;
+    font-weight: bold;
     margin-bottom: 20px;
+    color: var(--secondary);
 }  
   .footerLinks {
     margin-top: 16px;
