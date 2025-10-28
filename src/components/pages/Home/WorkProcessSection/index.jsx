@@ -38,7 +38,7 @@ const steps = [
 
 export default function WorkProcessSection() {
   return (
-    <section className={`${styles.wrapper} pb-[50px lg:pb-[100px]`} aria-labelledby="work-process-heading">
+    <section className={`${styles.wrapper} pb-[50px] lg:pb-[100px]`} aria-labelledby="work-process-heading">
       <Container>
       <div className={styles.topIntro}>            
         <h2 id="work-process-heading" className={styles.heading}>
