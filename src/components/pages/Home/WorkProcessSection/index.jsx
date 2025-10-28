@@ -8,16 +8,16 @@ import Container from "@/components/sections/Container";
 const steps = [
   {
     id: "01",
-    title: "Request / Quote",
+    title: "Order Initiated",
     desc:
-      "It starts with your shipment details—freight type, dimensions, weight, origin, destination, and timeline — and we provide a tailored quote within hours.",
+      "Once we receive the Delivery Order from our customer, we take full responsibility for the shipment and monitor container availability daily for pickup.",
     image: "/images/home/service-section/1.png",
   },
   {
     id: "02",
-    title: "Carrier Vetting",
+    title: "Order Dispatched",
     desc:
-      "We match your shipment with pre-vetted, qualified carriers based on safety, reliability, compliance, and route efficiency.",
+      "When the container is ready at the terminal, the carrier picks it up, collects the ingate ticket, and provides timely updates to the customer.",
     image: "/images/home/service-section/2.png",
   },
   {
