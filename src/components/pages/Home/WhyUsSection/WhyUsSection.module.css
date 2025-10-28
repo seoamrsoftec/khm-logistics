@@ -133,4 +133,11 @@
       margin-top: 40px;
     }
   }
+
+  @media (max-width: 480px) {
+    .image {
+        max-width: -webkit-fill-available;    
+      }
+  }
+ 
   
