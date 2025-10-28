@@ -1,7 +1,7 @@
 /* Prevents any white flash during mount */
 .PreloadBg {
     background: #000;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
   }
   
@@ -10,7 +10,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     background: #000; /* fallback background */
   }
   
@@ -36,7 +36,7 @@
   
   .HeroContainer {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     position: relative;
     display: flex;
     align-items: center;

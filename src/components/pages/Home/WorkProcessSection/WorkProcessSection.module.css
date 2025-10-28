@@ -1,0 +1,179 @@
+/* WorkProcessSection.module.css */
+.wrapper {      
+    background: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* .wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(#e6eef3 1px, transparent 1px);
+    background-size: 18px 18px;
+    opacity: 0.12;
+    pointer-events: none;
+    transform: translateY(-10%);
+  } */
+
+  .wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 1600px;
+    background: url("/images/home/service-section/process-workflow.png") center/cover no-repeat;
+    opacity: 0.7; /* control transparency */
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  /* heading block */
+  .topIntro {
+   
+    text-align: center;
+    position: relative;
+    z-index: 4;
+  }  
+
+  .heading {
+    font-size: 32px;     
+    font-weight: 700;
+    line-height: 42px;
+  }
+  
+  /* the canvas holds the svg path and the steps */
+  .canvas {
+    position: relative;   
+    padding-top: 10px;
+    z-index: 2;
+  }
+  
+  /* SVG path behind */
+  .pathSvg {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    z-index: 1;
+    pointer-events: none;
+    overflow: visible;
+  }
+  
+  /* row of steps — centered and spaced wide like example */
+  .stepsRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    position: relative;
+    z-index: 3;
+    align-items: start;
+  }
+  
+  /* each step column */
+  .step {
+    text-align: center;
+    padding-top: 30px; /* space so badge overlaps */
+  }
+  
+  /* circular image wrapper */
+  .circleWrap {
+    position: relative;
+    width:300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  /* the circle itself with overflow-hidden */
+  .circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(3, 18, 30, 0.06);
+  }
+  
+  /* next/image element - only image should zoom on hover */
+  .img {
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 0.9s cubic-bezier(.2,.9,.2,1);
+  }
+  
+  /* subtle overlay on circle */
+  .circleOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(3,18,30,0.36) 0%, rgba(3,18,30,0.08) 60%, rgba(3,18,30,0.02) 100%);
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+  }
+  
+  /* number badge overlapping top-left of circle */
+  .badge {
+    position: absolute;    
+    top: -25px;
+    left: -20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px #03121e14;
+    font-weight: 700;
+    color: #08323a;
+    z-index: 6;
+    border: 6px solid #fffffff2;
+}
+  
+  /* title under circle */
+  .stepTitle {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #08323a;
+    font-weight: 700;
+  }
+  
+  /* description */
+  .stepDesc {
+    max-width: 260px;
+    margin: 0 auto;
+    color: #596b74;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* Hover behavior: only image zooms, overlay fades to lighter (less opaque) */
+  .step:hover .img {
+    transform: scale(1.12);
+  }
+  
+  .step:hover .circleOverlay {
+    opacity: 0.28;
+  }
+  
+  /* small responsiveness tweaks */
+  @media (max-width: 1100px) {
+    .circleWrap { width: 190px; height: 190px; }
+    .stepDesc { max-width: 220px; }
+  }
+  
+  @media (max-width: 880px) {
+    .stepsRow { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .pathSvg { top: 20px; height: 120px; }
+    .heading { font-size: 34px; }
+  }
+  
+  @media (max-width: 520px) {   
+    .topIntro { margin-bottom: 18px; }
+    .stepsRow { grid-template-columns: 1fr; gap: 30px; }
+    .circleWrap { width: 160px; height: 160px; }
+    .heading { font-size: 26px; }
+    .pathSvg { display: none; } 
+  }
+  

@@ -3,6 +3,7 @@
 import AboutSection from "@/components/pages/Home/AboutSection";
 import BannerHeroSlider from "@/components/pages/Home/BannerHeroSlider";
 import ServiceSection from "@/components/pages/Home/ServiceSection";
+import WorkProcessSection from "@/components/pages/Home/WorkProcessSection";
 
 export async function generateMetadata() {
     const siteUrl = 'https://khm-logistics.vercel.app/';
@@ -34,6 +35,7 @@ export default function HomePage() {
         <BannerHeroSlider/>
         <AboutSection/>
         <ServiceSection/>
+        <WorkProcessSection/>
       
         
     </>
