@@ -11,7 +11,7 @@ export default function AboutHero() {
           {/* IMAGE SIDE */}
           <div className={styles.imageSide}>
             <Image
-              src="/images/about/abt-hero/hero-abt.png"
+              src="/images/about/abt-hero/about-hero-section-img.webp"
               alt="KHM Logistics Trucking Services USA"
               height={1080}
               width={1080}
