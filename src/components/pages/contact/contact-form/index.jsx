@@ -1,15 +1,14 @@
 "use client";
 import { useState } from "react";
-import styles from "./contact-form.module.css";
 import Container from "@/components/sections/Container";
 
 export default function Contactform() {
   const [formData, setFormData] = useState({
-    first: "",
-    last: "",
+    name: "",
     email: "",
-    contact: "",
-    message: "",
+    phone: "",
+    suburb: "",
+    description: "",
   });
 
   const handleChange = (e) => {
@@ -19,107 +18,129 @@ export default function Contactform() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    alert("Thank you! Your enquiry has been submitted.");
+    alert("Thank you! Your inquiry has been submitted successfully.");
   };
 
   return (
-    <section>
+    <section className="bg-[var(--theme-bg)] py-24">
       <Container>
-    <div className="bg-[var(--theme-bg)] flex flex-col md:flex-row items-start justify-center px-2 py-20 gap-12">
-     
-      <div className="w-full md:w-1/2 space-y-8">
-        <div>
-          <h2 className="text-3xl font-bold text-[var(--primary)]">Get in Touch</h2>
-          <p className="text-gray-600 mt-2">
-            Contact us today for seamless transportation solutions.
-          </p>
-        </div>
-        <hr className="border-[var(--soft-grey)]" />
+        <div className="flex flex-col md:flex-row items-start justify-between gap-14">
+          {/* --- Left Info Section --- */}
+          <div className="w-full md:w-1/2 space-y-10">
+            <div>
+              <h2 className="text-5xl font-bold text-[var(--primary)] mb-4">
+                Get in Touch
+              </h2>
+              <p className="text-gray-600 leading-relaxed text-lg max-w-lg">
+                Have questions about our{" "}
+                <strong>Drayage Services</strong>,{" "}
+                <strong>Transloading</strong>, or{" "}
+                <strong>Hazmat Solutions</strong>?  
+                We’re here to help you streamline logistics across the USA with
+                precision, reliability, and care.
+              </p>
+            </div>
 
-        <div>
-          <h3 className="text-2xl font-semibold text-[var(--primary)]">Location</h3>
-          <p className="text-gray-700 mt-1">
-            555 Broadhollow Rd., Suite 305, Melville, 11747
-          </p>
-        </div>
-        <hr className="border-[var(--soft-grey)]" />
+            <div className="space-y-8 bg-[var(--white)] shadow-md rounded-2xl p-8 border border-gray-100">
+              <div>
+                <h3 className="text-xl font-semibold text-[var(--primary)]">
+                  Location
+                </h3>
+                <p className="text-gray-700 mt-1">
+                  555 Broadhollow Rd., Suite 305, Melville, 11747
+                </p>
+              </div>
 
-        <div>
-          <h3 className="text-2xl font-semibold text-[var(--primary)]">Make a Call</h3>
-          <p className="text-[var(--secondary)] mt-1 font-medium">
-            +1 (516) 666-4046
-          </p>
-        </div>
-        <hr className="border-[var(--soft-grey)]" />
+              <div>
+                <h3 className="text-xl font-semibold text-[var(--primary)]">
+                  Get in Touch
+                </h3>
+                <p className="text-[var(--secondary)] mt-1 font-medium">
+                  +1 (516) 666-4046
+                </p>
+              </div>
 
-        <div>
-          <h3 className="text-2xl font-semibold text-[var(--primary)]">Our Email</h3>
-          <p className="text-[var(--secondary)] mt-1 font-medium">
-            support@g1313logistics.net
-          </p>
-        </div>
-      </div>
+              <div>
+                <h3 className="text-xl font-semibold text-[var(--primary)]">
+                  Our Email
+                </h3>
+                <p className="text-[var(--secondary)] mt-1 font-medium">
+                  support@g1313logistics.net
+                </p>
+              </div>
+            </div>
 
-       <div className="w-full md:w-1/2 bg-[var(--white)] shadow-[0_4px_15px_rgba(0,0,0,0.1)] rounded-2xl p-8 md:p-10">
-
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input
-              type="text"
-              name="First Name"
-              placeholder="First"
-              value={formData.first}
-              onChange={handleChange}
-              className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
-            />
-            <input
-              type="text"
-              name="Last Name"
-              placeholder="Last"
-              value={formData.last}
-              onChange={handleChange}
-              className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
-            />
+            <p className="text-gray-600 italic text-base">
+              Let’s move your freight — the{" "}
+              <strong>KHM Logistics</strong> way.
+            </p>
           </div>
 
-          <input
-            type="Email"
-            name="Email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
-          />
+          {/* --- Right Form Section --- */}
+          <div className="w-full md:w-1/2 bg-[var(--white)] shadow-[0_4px_25px_rgba(0,0,0,0.08)] rounded-2xl p-10">
+            <h3 className="text-3xl font-semibold text-center mb-8 text-[var(--primary)]">
+              Connect With Our Logistics Team
+            </h3>
 
-          <input
-            type="text"
-            name="contact"
-            placeholder="Contact No."
-            value={formData.contact}
-            onChange={handleChange}
-            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
-          />
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
+              />
 
-          <textarea
-            name="message"
-            rows="4"
-            placeholder="Message"
-            value={formData.message}
-            onChange={handleChange}
-            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
-          ></textarea>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
+              />
 
-          <button
-            type="submit"
-            className="bg-[var(--secondary)] text-[var(--white)] px-8 py-3 rounded-full font-medium hover:bg-[var(--primary)] transition-[var(--transition)]"
-          >
-            Send Enquiries
-          </button>
-        </form>
-      </div>
-     
-    </div>
-    </Container>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Enter your phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
+              />
+
+              <input
+                type="text"
+                name="suburb"
+                placeholder="Enter your suburb"
+                value={formData.suburb}
+                onChange={handleChange}
+                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
+              />
+
+              <textarea
+                name="description"
+                rows="4"
+                placeholder="Describe your shipment..."
+                value={formData.description}
+                onChange={handleChange}
+                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
+              ></textarea>
+
+              <button
+                type="submit"
+                className="bg-[var(--secondary)] w-full text-[var(--white)] py-3 rounded-full font-medium hover:bg-[var(--primary)] transition-all"
+              >
+                Submit Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </Container>
     </section>
   );
 }
