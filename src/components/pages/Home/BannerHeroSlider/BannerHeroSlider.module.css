@@ -12,6 +12,7 @@
     width: 100%;
     height: 70vh;
     background: #000; /* fallback background */
+    margin-top: 80px;
   }
   
   .Heroswiper {
