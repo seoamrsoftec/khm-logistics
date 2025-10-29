@@ -25,7 +25,7 @@ export default function Contactform() {
   return (
     <section>
       <Container>
-    <div className="bg-[var(--theme-bg)] flex flex-col md:flex-row items-start justify-center px-6 md:px-20 py-20 gap-12">
+    <div className="bg-[var(--theme-bg)] flex flex-col md:flex-row items-start justify-center px-2 py-20 gap-12">
      
       <div className="w-full md:w-1/2 space-y-8">
         <div>
@@ -66,7 +66,7 @@ export default function Contactform() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="text"
-              name="first"
+              name="First Name"
               placeholder="First"
               value={formData.first}
               onChange={handleChange}
@@ -74,7 +74,7 @@ export default function Contactform() {
             />
             <input
               type="text"
-              name="last"
+              name="Last Name"
               placeholder="Last"
               value={formData.last}
               onChange={handleChange}
@@ -83,8 +83,8 @@ export default function Contactform() {
           </div>
 
           <input
-            type="email"
-            name="email"
+            type="Email"
+            name="Email"
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
