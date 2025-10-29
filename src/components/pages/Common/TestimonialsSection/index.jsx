@@ -54,7 +54,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section>
+    <section className="pb-[50px] lg:pb-[100px]">
         <Container>
             <div>
                 <div className="">
