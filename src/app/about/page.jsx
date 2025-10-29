@@ -1,3 +1,4 @@
+import AboutHero from "@/components/pages/About/AboutHero";
 import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
 
 
@@ -33,7 +34,8 @@ export default function About() {
           title="Trucking Services USA – Reliable Freight & Special Equipment | KHM Logistics" 
           description="At KHM Logistics, we take pride in delivering dependable and flexible trucking services across the USA. Whether you need standard freight shipping or specialized equipment for unique loads, our experienced team ensures your cargo moves safely, efficiently, and on schedule. Every shipment matters to us — because we handle your freight as if it were our own."         
           overlayOpacity={0.7}
-       />     
+       />  
+      <AboutHero/> 
     </>
   );
 }
