@@ -22,13 +22,13 @@ export default function Contactform() {
   };
 
   return (
-    <section className="bg-[var(--theme-bg)] py-24">
+    <section className="bg-[var(--theme-bg)] py-20 md:py-24">
       <Container>
-        <div className="flex flex-col md:flex-row items-start justify-between gap-14">
+        <div className="flex flex-col md:flex-row items-start justify-between gap-12 md:gap-16">
           {/* --- Left Info Section --- */}
           <div className="w-full md:w-1/2 space-y-10">
             <div>
-              <h2 className="text-5xl font-bold text-[var(--primary)] mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-[var(--primary)] mb-4">
                 Get in Touch
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg max-w-lg">
@@ -41,13 +41,13 @@ export default function Contactform() {
               </p>
             </div>
 
-            <div className="space-y-8 bg-[var(--white)] shadow-md rounded-2xl p-8 border border-gray-100">
+            <div className="space-y-8 bg-[var(--white)] shadow-md rounded-2xl p-6 sm:p-8 border border-gray-100">
               <div>
                 <h3 className="text-xl font-semibold text-[var(--primary)]">
                   Location
                 </h3>
-                <p className="text-gray-700 mt-1">
-                  555 Broadhollow Rd., Suite 305, Melville, 11747
+                <p className="text-gray-700 mt-1 text-base leading-relaxed">
+                  D-151, Phase 8, Industrial Area Mohali, Sahibzada Ajit Singh Nagar, Punjab 160071
                 </p>
               </div>
 
@@ -55,8 +55,8 @@ export default function Contactform() {
                 <h3 className="text-xl font-semibold text-[var(--primary)]">
                   Get in Touch
                 </h3>
-                <p className="text-[var(--secondary)] mt-1 font-medium">
-                  +1 (516) 666-4046
+                <p className="text-[var(--secondary)] mt-1 font-medium text-lg">
+                  +91 (987) 654-3210
                 </p>
               </div>
 
@@ -64,21 +64,21 @@ export default function Contactform() {
                 <h3 className="text-xl font-semibold text-[var(--primary)]">
                   Our Email
                 </h3>
-                <p className="text-[var(--secondary)] mt-1 font-medium">
-                  support@g1313logistics.net
+                <p className="text-[var(--secondary)] mt-1 font-medium text-lg">
+                  info@khmlogistics.com
                 </p>
               </div>
             </div>
 
             <p className="text-gray-600 italic text-base">
               Let’s move your freight — the{" "}
-              <strong>KHM Logistics</strong> way.
+              <strong className="text-[var(--secondary)]">KHM Logistics</strong> way.
             </p>
           </div>
 
           {/* --- Right Form Section --- */}
-          <div className="w-full md:w-1/2 bg-[var(--white)] shadow-[0_4px_25px_rgba(0,0,0,0.08)] rounded-2xl p-10">
-            <h3 className="text-3xl font-semibold text-center mb-8 text-[var(--primary)]">
+          <div className="w-full md:w-1/2 bg-[var(--white)] shadow-[0_4px_25px_rgba(0,0,0,0.08)] rounded-2xl p-6 sm:p-8 md:p-10">
+            <h3 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-[var(--primary)]">
               Connect With Our Logistics Team
             </h3>
 
@@ -90,7 +90,7 @@ export default function Contactform() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
+                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)] transition"
               />
 
               <input
@@ -100,7 +100,7 @@ export default function Contactform() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
+                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)] transition"
               />
 
               <input
@@ -110,7 +110,7 @@ export default function Contactform() {
                 value={formData.phone}
                 onChange={handleChange}
                 required
-                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
+                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)] transition"
               />
 
               <input
@@ -119,7 +119,7 @@ export default function Contactform() {
                 placeholder="Enter your suburb"
                 value={formData.suburb}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
+                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)] transition"
               />
 
               <textarea
@@ -128,7 +128,7 @@ export default function Contactform() {
                 placeholder="Describe your shipment..."
                 value={formData.description}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)]"
+                className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--secondary)] transition resize-none"
               ></textarea>
 
               <button
