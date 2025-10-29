@@ -1,57 +1,50 @@
 "use client";
-import styles from "./AboutHero.module.css";
 import Image from "next/image";
+import styles from "./AboutHero.module.css";
+import Container from "@/components/sections/Container";
 
 export default function AboutHero() {
   return (
-    <section className={styles.AboutHero}>
-      <div className={styles.Container}>
-        {/* Left: Image */}
-        <div className={styles.ImageWrapper}>
-          <Image
-            src="/images/about/about-hero.jpg"
-            alt="KHM Logistics - Trucking and Logistics Services USA"
-            fill
-            className={styles.Image}
-            priority
-          />
+    <section className="py-[50px] lg:py-[100px]">
+      <Container>
+        <div className={styles.inner}>
+          {/* IMAGE SIDE */}
+          <div className={styles.imageSide}>
+            <Image
+              src="/images/about/abt-hero/hero-abt.png"
+              alt="KHM Logistics Trucking Services USA"
+              height={1080}
+              width={1080}
+              className={styles.image}
+              priority
+            />
+          </div>
+
+          {/* CONTENT SIDE */}
+          <div className={styles.contentSide}>
+            <span className={styles.label}>About Us</span>
+            <h2 className={styles.title}>
+              Reliable & Specialized Logistics Across the USA
+            </h2>
+            <p className={styles.text}>
+              At <strong>KHM Logistics</strong>, we deliver reliable and flexible{" "}
+              <strong>trucking services across the USA</strong> — ensuring that
+              every shipment, big or small, reaches its destination on time and in
+              perfect condition.
+            </p>
+            <p className={styles.text}>
+              With a modern fleet and access to specialized equipment, we handle
+              everything from standard freight to unique, high-value loads. Every
+              delivery is treated with precision, transparency, and care.
+            </p>
+            <p className={styles.text}>
+              Backed by a dedicated team and real-time support,{" "}
+              <strong>KHM Logistics</strong> stands for efficiency, safety, and
+              reliability — helping businesses move forward with confidence.
+            </p>
+          </div>
         </div>
-
-        {/* Right: Content */}
-        <div className={styles.Content}>
-          <span className={styles.SectionLabel}>About Us</span>
-          <h2 className={styles.Title}>
-            Our Specialized & Logistics Solutions Across the USA
-          </h2>
-
-          <p className={styles.Text}>
-            At <strong>KHM Logistics</strong>, we understand that every shipment
-            is different. That’s why we offer{" "}
-            <strong>trucking services USA</strong> businesses can depend on —
-            no matter how complex the load or how far the destination. From
-            pickup to final delivery, our experienced team handles each shipment
-            with care and precision, ensuring your goods are safe, secure, and
-            delivered on time.
-          </p>
-
-          <p className={styles.Text}>
-            What sets us apart in the world of{" "}
-            <strong>trucking services in the USA</strong> is our ability to
-            manage a wide variety of specialized freight. Whether you need
-            flatbed transport, container drayage, or secure movement of hazmat
-            materials, we have the equipment and expertise to get the job done
-            right.
-          </p>
-
-          <p className={styles.Text}>
-            Backed by a commitment to customer service and real-time support,
-            <strong> KHM Logistics</strong> simplifies your supply chain. As
-            your trusted partner for <strong>trucking services USA</strong>,
-            we’re focused on building long-term relationships grounded in
-            transparency, efficiency, and results.
-          </p>
-        </div>
-      </div>
+      </Container>
     </section>
   );
 }
