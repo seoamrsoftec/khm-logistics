@@ -41,18 +41,18 @@ const Navigation = [
     },
     { 
       title: 'Services',
-      linkSource:'/freight-forwarding-sydney',
+      linkSource:'/services',
       items: [
-        { label: 'Supply Chain', href: '/#' },
-        { label: 'Transloading Services', href: '/#' },
-        { label: 'Warehouse Services', href: '/#' },
-        { label: 'Intermodal Services', href: '/#' },
-        { label: 'Hazmat Services', href: '/#' }
+        { label: 'Supply Chain', href: '/services/supply-chain' },
+        { label: 'Transloading Services', href: '/services/transloading-services' },
+        { label: 'Warehouse Services', href: '/services/warehouse-services' },
+        { label: 'Intermodal Services', href: '/services/intermodal-services' },
+        { label: 'Hazmat Services', href: '/services/hazmat-services' }
       ] 
     },
     { 
       title: 'Why Choose Us', 
-      linkSource:'#' 
+      linkSource:'/why-choose-us' 
     },
     { 
         title: 'Contact Us', 

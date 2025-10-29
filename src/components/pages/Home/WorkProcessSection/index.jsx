@@ -79,13 +79,15 @@ export default function WorkProcessSection() {
               <div key={s.id} className={styles.step}>
                 <div className={styles.circleWrap}>
                   <div className={styles.circle}>
-                    <Image
+                  <Image
                       src={s.image}
                       alt={s.title}
-                      width={540}
-                      height={540}
+                      fill
+                      priority
+                      quality={100}
+                      sizes="(max-width: 520px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       className={styles.img}
-                      sizes="(max-width: 768px) 180px, 220px"
+                      unoptimized={false}
                     />
                     <div className={styles.circleOverlay} />
                   </div>

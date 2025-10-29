@@ -10,6 +10,7 @@ export default function HeroBannerCommon({
   buttonText,
   buttonLink,
   overlayOpacity = 0.5,
+  servicesLink, // ✅ new prop for dynamic Services link
 }) {
   const pathname = usePathname();
   const pathParts = pathname?.split("/").filter(Boolean) || [];
@@ -28,11 +29,19 @@ export default function HeroBannerCommon({
         {/* ✅ Dynamic Breadcrumb */}
         <nav className={styles.Breadcrumb}>
           <Link href="/">Home</Link>
+
           {pathParts.map((part, index) => {
-            const href = "/" + pathParts.slice(0, index + 1).join("/");
             const label =
               part.charAt(0).toUpperCase() + part.slice(1).replace(/-/g, " ");
             const isLast = index === pathParts.length - 1;
+
+            // ✅ Handle "Services" link dynamically
+            let href;
+            if (label.toLowerCase() === "services") {
+              href = servicesLink || "#"; // fallback if not defined
+            } else {
+              href = "/" + pathParts.slice(0, index + 1).join("/");
+            }
 
             return (
               <span key={index} className={styles.BreadcrumbItem}>
