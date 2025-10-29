@@ -1,6 +1,7 @@
 "use client";
 import styles from "./HeroBannerCommon.module.css";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function HeroBannerCommon({
   bgImage,
@@ -10,6 +11,9 @@ export default function HeroBannerCommon({
   buttonLink,
   overlayOpacity = 0.5,
 }) {
+  const pathname = usePathname();
+  const pathParts = pathname?.split("/").filter(Boolean) || [];
+
   return (
     <section
       className={styles.HeroBanner}
@@ -21,6 +25,29 @@ export default function HeroBannerCommon({
       ></div>
 
       <div className={styles.ContentWrapper}>
+        {/* ✅ Dynamic Breadcrumb */}
+        <nav className={styles.Breadcrumb}>
+          <Link href="/">Home</Link>
+          {pathParts.map((part, index) => {
+            const href = "/" + pathParts.slice(0, index + 1).join("/");
+            const label =
+              part.charAt(0).toUpperCase() + part.slice(1).replace(/-/g, " ");
+            const isLast = index === pathParts.length - 1;
+
+            return (
+              <span key={index} className={styles.BreadcrumbItem}>
+                <span className={styles.Separator}>›</span>
+                {isLast ? (
+                  <span>{label}</span>
+                ) : (
+                  <Link href={href}>{label}</Link>
+                )}
+              </span>
+            );
+          })}
+        </nav>
+
+        {/* ✅ Title, Description, and Optional Button */}
         {title && <h1 className={styles.Title}>{title}</h1>}
         {description && <p className={styles.Description}>{description}</p>}
         {buttonText && buttonLink && (

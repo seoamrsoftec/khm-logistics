@@ -105,6 +105,7 @@ export default function About() {
         "With a customer-first approach, dependable service, and nationwide coverage, KHM Logistics is the trusted partner businesses rely on for efficient, safe, and cost-effective logistics.",
     },
   ];
+  
   return (
     <>
        <HeroBannerCommon
