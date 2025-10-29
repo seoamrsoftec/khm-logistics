@@ -73,12 +73,10 @@
      .inner {
       grid-template-columns: 1fr;
       gap: 60px;
-    }    
-   
+    }  
     .title {
       font-size: 1.75rem;
-    }
-  
+    }  
     .text {
       font-size: 1rem;
     }
@@ -88,13 +86,9 @@
     .inner {
       gap: 40px;
     }
-  
-    
-  
     .title {
       font-size: 1.5rem;
-    }
-  
+    }  
     .text {
       font-size: 0.95rem;
       line-height: 1.6;
