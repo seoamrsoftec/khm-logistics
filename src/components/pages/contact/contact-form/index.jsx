@@ -24,9 +24,8 @@ export default function Contactform() {
   return (
     <section className="bg-[var(--theme-bg)] py-20 md:py-24">
       <Container>
-        <div className="flex flex-col md:flex-row items-start justify-between gap-12 md:gap-16">
-          {/* --- Left Info Section --- */}
-          <div className="w-full md:w-1/2 space-y-10">
+        <div className="flex flex-col w-full lg:flex-row items-start justify-between gap-12 lg:gap-16">
+          <div className="w-full lg:w-1/2 space-y-10">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-[var(--primary)] mb-4">
                 Get in Touch
@@ -76,8 +75,7 @@ export default function Contactform() {
             </p>
           </div>
 
-          {/* --- Right Form Section --- */}
-          <div className="w-full md:w-1/2 bg-[var(--white)] shadow-[0_4px_25px_rgba(0,0,0,0.08)] rounded-2xl p-6 sm:p-8 md:p-10">
+          <div className="w-full lg:w-1/2 bg-[var(--white)] shadow-[0_4px_25px_rgba(0,0,0,0.08)] rounded-2xl p-6 sm:p-8 md:p-10">
             <h3 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-[var(--primary)]">
               Connect With Our Logistics Team
             </h3>
