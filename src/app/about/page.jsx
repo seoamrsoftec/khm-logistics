@@ -1,5 +1,6 @@
 import AboutHero from "@/components/pages/About/AboutHero";
 import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
+import TestimonialsSection from "@/components/pages/Common/TestimonialsSection";
 
 
 export async function generateMetadata() {
@@ -36,6 +37,7 @@ export default function About() {
           overlayOpacity={0.7}
        />  
       <AboutHero/> 
+      <TestimonialsSection/>
     </>
   );
 }
