@@ -47,7 +47,7 @@ export default function Contactform() {
                   Location
                 </h3>
                 <p className="text-gray-700 mt-1">
-                  555 Broadhollow Rd., Suite 305, Melville, 11747
+                  D-151, Phase 8, Industrial Area Mohali, Sahibzada Ajit Singh Nagar, Punjab 160071
                 </p>
               </div>
 
@@ -56,7 +56,7 @@ export default function Contactform() {
                   Get in Touch
                 </h3>
                 <p className="text-[var(--secondary)] mt-1 font-medium">
-                  +1 (516) 666-4046
+                  +91 (987) 654-3210
                 </p>
               </div>
 
@@ -65,7 +65,7 @@ export default function Contactform() {
                   Our Email
                 </h3>
                 <p className="text-[var(--secondary)] mt-1 font-medium">
-                  support@g1313logistics.net
+                  info@khmlogistics.com
                 </p>
               </div>
             </div>
