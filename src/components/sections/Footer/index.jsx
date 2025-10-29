@@ -10,7 +10,7 @@ export default function Footer() {
       <footer className={styles.Footermain}>
         <Container>
           <div className={styles.Footerinner}>
-            <div className="grid grid-cols-12 px-[10px] footer_grid justify-center gap-y-10 gap-3 xl:gap-10 text-[14px] md:text-[16px]">
+            <div className="grid grid-cols-12 px-[10px] footer_grid justify-center gap-y-10 gap-3 xl:gap-10 text-[14px] md:text-[16px] ">
               <div className="col-span-12 md:col-span-4 lg:col-span-4">
                 <div className="">
                   <div className="footer-col">

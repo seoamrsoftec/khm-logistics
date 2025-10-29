@@ -1,6 +1,6 @@
 .Footermain{
-  padding: 100px 0 30px 0;
-  background:url('/images/footer-bg.jpg');
+  padding: 50px 0 10px;
+  /* background:url('/images/footer-bg.jpg'); */
   color: var(--accent) !important;
   background-size: cover;
   background-position: center;
