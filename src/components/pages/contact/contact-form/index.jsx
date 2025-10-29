@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./contact-form.module.css";
+import Container from "@/components/sections/Container";
 
 export default function Contactform() {
   const [formData, setFormData] = useState({
@@ -22,8 +23,10 @@ export default function Contactform() {
   };
 
   return (
-    <section className="bg-[var(--theme-bg)] flex flex-col md:flex-row items-start justify-center px-6 md:px-20 py-20 gap-12">
-      {/* Left Side */}
+    <section>
+      <Container>
+    <div className="bg-[var(--theme-bg)] flex flex-col md:flex-row items-start justify-center px-6 md:px-20 py-20 gap-12">
+     
       <div className="w-full md:w-1/2 space-y-8">
         <div>
           <h2 className="text-3xl font-bold text-[var(--primary)]">Get in Touch</h2>
@@ -57,7 +60,6 @@ export default function Contactform() {
         </div>
       </div>
 
-      {/* Right Side - Form */}
        <div className="w-full md:w-1/2 bg-[var(--white)] shadow-[0_4px_15px_rgba(0,0,0,0.1)] rounded-2xl p-8 md:p-10">
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -115,6 +117,9 @@ export default function Contactform() {
           </button>
         </form>
       </div>
+     
+    </div>
+    </Container>
     </section>
   );
 }

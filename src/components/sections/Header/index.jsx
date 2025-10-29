@@ -56,7 +56,7 @@ const Navigation = [
     },
     { 
         title: 'Contact Us', 
-        linkSource:'#' 
+        linkSource:'/contact' 
       },
   ]; 
 
