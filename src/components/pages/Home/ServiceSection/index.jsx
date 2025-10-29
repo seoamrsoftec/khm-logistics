@@ -7,31 +7,31 @@ const services = [
   {
     id: "01",
     title: "Supply Chain Services",
-    image: "/images/home/service-section/1.png",
+    image: "/images/home/service-section/service1.webp",
     link: "/supply-chain",
   },
   {
     id: "02",
     title: "Transloading Services",
-    image: "/images/home/service-section/2.png",
+    image: "/images/home/service-section/service2.webp",
     link: "/transloading",
   },
   {
     id: "03",
     title: "Intermodal Services",
-    image: "/images/home/service-section/3.png",
+    image: "/images/home/service-section/service3.webp",
     link: "/intermodal",
   },
   {
     id: "04",
     title: "Warehouse Services",
-    image: "/images/home/service-section/4.png",
+    image: "/images/home/service-section/service4.webp",
     link: "/warehouse",
   },
   {
     id: "05",
     title: "Hazmat Services",
-    image: "/images/home/service-section/5.png",
+    image: "/images/home/service-section/service5.webp",
     link: "/hazmat",
   },
 ];

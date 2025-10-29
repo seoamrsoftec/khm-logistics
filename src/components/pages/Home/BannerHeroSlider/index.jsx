@@ -11,11 +11,11 @@ import "swiper/css/effect-fade";
 import styles from "./BannerHeroSlider.module.css";
 
 const slideData = [
-  { bgImage: "/images/bannerslider/1.png" },
-  { bgImage: "/images/bannerslider/2.png" },
-  { bgImage: "/images/bannerslider/3.png" },
-  { bgImage: "/images/bannerslider/4.png" },
-  { bgImage: "/images/bannerslider/5.png" },
+  { bgImage: "/images/bannerslider/home/home-banner1.webp" },
+  { bgImage: "/images/bannerslider/home/home-banner2.webp" },
+  { bgImage: "/images/bannerslider/home/home-banner3.webp" },
+  { bgImage: "/images/bannerslider/home/home-banner4.webp" },
+  { bgImage: "/images/bannerslider/home/home-banner5.webp" },
 ];
 
 export default function BannerHeroSlider() {
