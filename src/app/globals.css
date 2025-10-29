@@ -4,9 +4,10 @@
 html {
   scroll-behavior: smooth;
 }
-:root {
+:root {  
   --primary: #04293f;
-  --secondary: #ef9f2f;
+  /* --secondary: #ef9f2f; */
+  --secondary: #0e7e99;
   --theme-bg: #fff;
   --accent: #E8F5E9;
   --text:#000;
@@ -86,9 +87,9 @@ html {
 a {
   /* color: var(--primary); */
 }
-a:hover {
+/* a:hover {
   color: var(--secondary);
-}
+} */
 .transition {
   transition: var(--transition);
 }
