@@ -16,7 +16,7 @@ export default function Footer() {
                   <div className="footer-col">
                     <div className={styles.Footerlogo}>
                       <div>
-                         <Image src="/images/logo/khm-logo-wht.png" alt="Sydney Container Logo" width={500} height={202} className="w-[150px] h-auto"/>
+                         <Image src="/images/logo/khm-logo-wht.png" alt="Sydney Container Logo" width={500} height={202} className="w-[100px] h-auto"/>
                       </div>
                     </div>
                     <h3 className={styles.footerTitle}>
