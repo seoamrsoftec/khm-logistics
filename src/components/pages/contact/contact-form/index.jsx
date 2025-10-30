@@ -26,19 +26,19 @@ export default function Contactform() {
       <Container>
         <div className="flex flex-col w-full lg:flex-row items-start justify-between gap-12 lg:gap-16">
           <div className="w-full lg:w-1/2 space-y-10">
-            <div className="only-md-center">
+           <div className="w-full text-center md:text-center ">
               <h2 className="text-[30px] font-bold text-[var(--primary)] mb-4">
-              Get in Touch
+                Get in Touch
               </h2>
-               <p className="text-gray-600 leading-relaxed text-lg max-w-xl mx-auto md:mx-0">
+              <p className="text-gray-600 leading-relaxed text-lg max-w-xl mx-auto md:mx-0">
                 Have questions about our{" "}
-                  <strong>Drayage Services</strong>,{" "}
-                  <strong>Transloading</strong>, or{" "}
-                  <strong>Hazmat Solutions</strong>?  
+                <strong>Drayage Services</strong>,{" "}
+                <strong>Transloading</strong>, or{" "}
+                <strong>Hazmat Solutions</strong>?  
                 We’re here to help you streamline logistics across the USA with
                 precision, reliability, and care.
-          </p>
-          </div>
+              </p>
+            </div>
 
             <div className="space-y-8 bg-[var(--white)] shadow-md rounded-2xl p-6 sm:p-8 border border-gray-100">
               <div>
