@@ -121,7 +121,7 @@
   
   @media (max-width: 768px) {
     .HeroBanner {
-      height: 50vh;
+      height: 70vh;
     }
     .Description {
       font-size: 0.95rem;

@@ -1,6 +1,7 @@
 import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
 import SiteCta from "@/components/pages/Common/SiteCta";
 import FaqSection from "@/components/pages/Common/FaqSection";
+import ServicesHero from "@/components/pages/Common/ServicesHero";
 export async function generateMetadata() {
     const siteUrl = 'https://khm-logistics.vercel.app/';
     const title = '';
@@ -116,15 +117,27 @@ const supplychainFaqs = [
           description="At KHM Logistics, we offer end-to-end supply chain solutions designed to optimize your logistics operations. From freight transportation to inventory management, our comprehensive services ensure seamless integration and efficiency across your entire supply chain."         
           overlayOpacity={0.7}
        />  
+       <ServicesHero
+          title="Supply Chain Management Services"
+          description="At KHM Logistics, we offer comprehensive supply chain management solutions designed to streamline your operations from procurement to final delivery. Our focus is on efficiency, transparency, and adaptability — ensuring your business never stops moving forward."
+          image="/images/services/supply-chain/supply-chain-hero.webp"
+          alt="Supply Chain Management"
+          paragraphs={[
+            "We integrate technology-driven logistics with real-time visibility, allowing you to monitor and optimize every link in your supply chain.",
+            "Our dedicated team ensures that goods are handled with precision and care, maintaining quality and reducing delays.",
+            "With our scalable and flexible solutions, we adapt to the changing dynamics of global trade and customer demand.",
+            "From warehousing and inventory management to transport coordination, we cover every stage of your logistics journey.",
+          ]}
+        />
         <div className="pt-[50px] lg:pt-[100px]">
-                 <FaqSection
-                   title="FAQs — Supply Chain Services"
-                   description="Get clear answers to frequently asked questions about our end-to-end supply chain solutions, including inventory management, logistics coordination, and optimized delivery operations."
-                   faqs={supplychainFaqs}
-                   leftImage="/images/faq/faq-bg.png"
-                 />
-                 <SiteCta/>
-              </div> 
+            <FaqSection
+              title="FAQs — Supply Chain Services"
+              description="Get clear answers to frequently asked questions about our end-to-end supply chain solutions, including inventory management, logistics coordination, and optimized delivery operations."
+              faqs={supplychainFaqs}
+              leftImage="/images/faq/faq-bg.png"
+            />
+            <SiteCta/>
+        </div> 
     </>
   );
 }
