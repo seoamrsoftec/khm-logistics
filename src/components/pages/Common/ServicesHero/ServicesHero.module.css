@@ -96,7 +96,7 @@
     .point {
       text-align: center;
       border-left: none;
-      border-top: 3px solid var(--secondary);
+      border-left: 3px solid var(--secondary);
     }
   }
   
