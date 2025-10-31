@@ -1,5 +1,4 @@
 import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
-import ServiceSection from "@/components/pages/Home/ServiceSection";
 import SiteCta from "@/components/pages/Common/SiteCta";
 import FaqSection from "@/components/pages/Common/FaqSection";
 
@@ -118,10 +117,9 @@ const intermodalFaqs = [
           overlayOpacity={0.7}
        /> 
        <div className="pt-[50px] lg:pt-[100px]">
-            <ServiceSection/>
             <FaqSection
-              title="FAQs — Services"
-              description="Get answers to the most common questions about our trucking and freight services."
+              title="FAQs — Intermodal Services"
+              description="Explore detailed answers to common questions about our intermodal logistics solutions, including rail and truck coordination, container transfers, and cost-efficient freight movement."
               faqs={intermodalFaqs}
               leftImage="/images/faq/faq-bg.png"
             />

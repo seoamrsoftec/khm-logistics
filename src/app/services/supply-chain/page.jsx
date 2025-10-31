@@ -1,5 +1,4 @@
 import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
-import ServiceSection from "@/components/pages/Home/ServiceSection";
 import SiteCta from "@/components/pages/Common/SiteCta";
 import FaqSection from "@/components/pages/Common/FaqSection";
 export async function generateMetadata() {
@@ -118,10 +117,9 @@ const supplychainFaqs = [
           overlayOpacity={0.7}
        />  
         <div className="pt-[50px] lg:pt-[100px]">
-                 <ServiceSection/>
                  <FaqSection
-                   title="FAQs — Services"
-                   description="Get answers to the most common questions about our trucking and freight services."
+                   title="FAQs — Supply Chain Services"
+                   description="Get clear answers to frequently asked questions about our end-to-end supply chain solutions, including inventory management, logistics coordination, and optimized delivery operations."
                    faqs={supplychainFaqs}
                    leftImage="/images/faq/faq-bg.png"
                  />
