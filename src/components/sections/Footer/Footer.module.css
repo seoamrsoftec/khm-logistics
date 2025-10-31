@@ -33,6 +33,12 @@
     margin-bottom: 20px;
     color: var(--secondary);
 }  
+.socailTitle{
+  font-size: 26px;
+  font-weight: bold;
+ 
+  color: var(--white);
+}
   .footerLinks {
     margin-top: 16px;
     font-size: 14px;
