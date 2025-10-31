@@ -1,0 +1,84 @@
+.benefitsSection {
+    padding: 80px 20px;
+    background: #f8fafc;
+  }
+  
+   
+  .header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .subtitle {
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: all 0.35s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+  
+  .iconWrapper {
+    background: #e0edff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .card:hover .iconWrapper {
+    background: var(--secondary);
+  }
+  
+  .icon {
+    object-fit: contain;
+    border-radius: 50%;
+    
+  }
+
+  .card:hover .icon{
+    transform: scale(1.1);
+  }
+  
+  
+  .cardTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 10px;
+  }
+  
+  .cardText {
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
