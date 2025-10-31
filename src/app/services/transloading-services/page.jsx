@@ -1,6 +1,7 @@
 import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
 import SiteCta from "@/components/pages/Common/SiteCta";
 import FaqSection from "@/components/pages/Common/FaqSection";
+import ServicesHero from "@/components/pages/Common/ServicesHero";
 
 export async function generateMetadata() {
     const siteUrl = 'https://khm-logistics.vercel.app/';
@@ -116,6 +117,19 @@ const transloadingFaqs = [
           description="KHM Logistics specializes in efficient transloading services that facilitate the seamless transfer of goods between different modes of transportation. Our expert team ensures that your cargo is handled with care, minimizing transit times and reducing costs."         
           overlayOpacity={0.7}
        /> 
+       <ServicesHero
+          title="Transloading Services"
+          description="KHM Logistics provides efficient and reliable transloading services that simplify the transfer of freight between different modes of transportation. Our goal is to help businesses reduce transit times, optimize costs, and maintain cargo integrity throughout the entire logistics process."
+          image="/images/services/supply-chain/supply-chain-hero.webp"
+          alt="Transloading Services"
+          paragraphs={[
+            "Our transloading facilities are strategically located near major ports, rail terminals, and distribution centers, allowing us to manage inbound and outbound freight with speed and precision.",
+            "We handle containerized, palletized, and oversized shipments, ensuring that goods are safely transferred between trucks, rail, and other transport modes using specialized equipment and trained personnel.",
+            "With real-time visibility, inventory control, and advanced tracking systems, we provide complete transparency at every stage of your transloading operation.",
+            "At KHM Logistics, our flexible and scalable transloading solutions help businesses improve efficiency, minimize dwell time, and achieve seamless freight movement across the supply chain.",
+          ]}
+        />
+
        <div className="pt-[50px] lg:pt-[100px]">
             <FaqSection
               title="FAQs — Transloading Services"

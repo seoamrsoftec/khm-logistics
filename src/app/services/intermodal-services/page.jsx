@@ -1,6 +1,7 @@
 import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
 import SiteCta from "@/components/pages/Common/SiteCta";
 import FaqSection from "@/components/pages/Common/FaqSection";
+import ServicesHero from "@/components/pages/Common/ServicesHero";
 
 export async function generateMetadata() {
     const siteUrl = 'https://khm-logistics.vercel.app/';
@@ -116,6 +117,19 @@ const intermodalFaqs = [
           description="KHM Logistics provides comprehensive intermodal services that combine multiple modes of transportation to deliver cost-effective and efficient logistics solutions. Our expertise in coordinating rail, truck, and sea transport ensures your cargo reaches its destination safely and on time."         
           overlayOpacity={0.7}
        /> 
+       <ServicesHero
+          title="Intermodal Transportation Services"
+          description="KHM Logistics delivers reliable intermodal transportation solutions that combine the efficiency of rail and the flexibility of trucking to move your freight safely, cost-effectively, and on time. Our multimodal approach ensures optimized routes and seamless coordination across every mode of transport."
+          image="/images/services/supply-chain/supply-chain-hero.webp"
+          alt="Intermodal Transportation Services"
+          paragraphs={[
+          "We specialize in connecting rail, road, and port logistics to create a unified transportation network that enhances supply chain efficiency and reduces overall shipping costs.",
+          "Our experienced logistics team manages every stage of your intermodal shipment — from drayage and container transfers to scheduling and real-time tracking — ensuring a smooth, hassle-free experience.",
+          "With advanced route optimization and digital visibility tools, we help businesses streamline long-haul freight movement while lowering fuel consumption and carbon footprint.",
+          "At KHM Logistics, we offer scalable and dependable intermodal solutions designed to support your business growth and deliver performance you can count on nationwide.",
+          ]}
+        />
+
        <div className="pt-[50px] lg:pt-[100px]">
             <FaqSection
               title="FAQs — Intermodal Services"

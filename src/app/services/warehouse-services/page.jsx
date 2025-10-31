@@ -1,6 +1,7 @@
 import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
 import SiteCta from "@/components/pages/Common/SiteCta";
 import FaqSection from "@/components/pages/Common/FaqSection";
+import ServicesHero from "@/components/pages/Common/ServicesHero";
 
 export async function generateMetadata() {
     const siteUrl = 'https://khm-logistics.vercel.app/';
@@ -116,6 +117,19 @@ const warehouseFaqs = [
           description="KHM Logistics provides state-of-the-art warehouse services to ensure the safe and efficient storage of your goods. Our facilities are equipped with advanced inventory management systems, climate control, and security measures to meet the diverse needs of our clients."         
           overlayOpacity={0.7}
        /> 
+       <ServicesHero
+          title="Warehouse and Distribution Services"
+          description="KHM Logistics offers secure, scalable, and strategically located warehouse services designed to optimize your supply chain. From short-term storage to full-scale distribution management, we provide flexible solutions that keep your goods organized, accessible, and moving efficiently."
+          image="/images/services/supply-chain/supply-chain-hero.webp"
+          alt="Warehouse and Distribution Services"
+          paragraphs={[
+            "Our modern warehouses are equipped with advanced inventory management systems, ensuring real-time visibility and accurate stock control across all operations.",
+            "We handle everything from receiving, sorting, and palletizing to order fulfillment, packaging, and outbound shipping — providing a complete end-to-end storage solution.",
+            "With temperature-controlled options, cross-docking capabilities, and 24/7 monitoring, we maintain the highest standards of safety, security, and compliance.",
+            "KHM Logistics helps businesses streamline their warehousing and distribution processes, reduce operational costs, and improve overall supply chain performance across the United States.",
+          ]}
+          />
+
          <div className="pt-[50px] lg:pt-[100px]">
               <FaqSection
                 title="FAQs — Warehouse Services"
