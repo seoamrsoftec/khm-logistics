@@ -48,7 +48,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 20px;
     transition: background 0.3s ease;
     overflow: hidden;
@@ -60,12 +60,12 @@
   
   .icon {
     object-fit: contain;
-    border-radius: 50%;
+    border-radius: 100px;
     
   }
 
   .card:hover .icon{
-    transform: scale(1.1);
+    transform: scale(1.3);
   }
   
   
