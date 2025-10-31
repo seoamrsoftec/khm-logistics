@@ -60,7 +60,8 @@
   
   .icon {
     object-fit: contain;
-    border-radius: 100px;
+    border-radius: 50%;
+    transition: all 0.6s ease;
     
   }
 

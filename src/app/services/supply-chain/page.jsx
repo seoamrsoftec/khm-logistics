@@ -158,7 +158,7 @@ const supplychainFaqs = [
             "From warehousing and inventory management to transport coordination, we cover every stage of your logistics journey.",
           ]}
         />
-        <ServiceBenefits data={servicebenefitsData} />
+        {/* <ServiceBenefits data={servicebenefitsData} /> */}
         <div className="pt-[50px] lg:pt-[100px]">
             <FaqSection
               title="FAQs — Supply Chain Services"
