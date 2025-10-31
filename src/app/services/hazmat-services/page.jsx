@@ -116,6 +116,19 @@ const hazmatFaqs = [
           description="KHM Logistics provides specialized hazmat services to ensure the safe and compliant transportation of hazardous materials. Our experienced team adheres to all regulatory requirements, offering tailored solutions to meet your specific needs while prioritizing safety and efficiency."         
           overlayOpacity={0.7}
        />   
+       <ServicesHero
+  title="Hazmat Transportation and Logistics Services"
+  description="KHM Logistics provides professional Hazmat transportation and logistics solutions that ensure the safe, compliant, and efficient movement of hazardous materials across the supply chain. Our certified team and advanced fleet guarantee secure handling from origin to destination."
+  image="/images/services/supply-chain/supply-chain-hero.webp"
+  alt="Hazmat Transportation Services"
+  paragraphs={[
+    "We specialize in the transportation of hazardous materials, offering end-to-end support that includes documentation, labeling, route planning, and strict regulatory compliance with DOT and FMCSA standards.",
+    "Our certified Hazmat drivers follow rigorous safety protocols and use advanced containment systems to minimize risk and ensure complete cargo protection throughout transit.",
+    "With real-time GPS tracking and digital reporting, clients gain full visibility into every shipment, ensuring peace of mind and operational control.",
+    "At KHM Logistics, we combine expertise, reliability, and compliance-driven service to deliver safe and efficient Hazmat logistics solutions nationwide.",
+  ]}
+/>
+
        <div className="pt-[50px] lg:pt-[100px]">
             <FaqSection
               title="FAQs — Hazmat Services"
