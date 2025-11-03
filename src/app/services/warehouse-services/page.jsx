@@ -120,7 +120,7 @@ const warehouseFaqs = [
        <ServicesHero
           title="Warehouse and Distribution Services"
           description="KHM Logistics offers secure, scalable, and strategically located warehouse services designed to optimize your supply chain. From short-term storage to full-scale distribution management, we provide flexible solutions that keep your goods organized, accessible, and moving efficiently."
-          image="/images/services/warehouse-service/warehouse.png"
+          image="/images/services/warehouse-service/warehouse-service.webp"
           alt="Warehouse and Distribution Services"
           paragraphs={[
             "Our modern warehouses are equipped with advanced inventory management systems, ensuring real-time visibility and accurate stock control across all operations.",

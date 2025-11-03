@@ -120,7 +120,7 @@ const hazmatFaqs = [
        <ServicesHero
           title="Hazmat Transportation and Logistics Services"
           description="KHM Logistics provides professional Hazmat transportation and logistics solutions that ensure the safe, compliant, and efficient movement of hazardous materials across the supply chain. Our certified team and advanced fleet guarantee secure handling from origin to destination."
-          image="/images/services/hazmat-service/hazmat.png"
+          image="/images/services/hazmat-service/hazmat-service.webp"
           alt="Hazmat Transportation Services"
           paragraphs={[
             "We specialize in the transportation of hazardous materials, offering end-to-end support that includes documentation, labeling, route planning, and strict regulatory compliance with DOT and FMCSA standards.",
