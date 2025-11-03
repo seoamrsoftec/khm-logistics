@@ -1,4 +1,6 @@
 import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
+import WhyCoreValues from "@/components/pages/WhyChooseUs/WhyCoreValues";
+import WhyIntroSection from "@/components/pages/WhyChooseUs/WhyIntroSection";
 
 export async function generateMetadata() {
     const siteUrl = 'https://khm-logistics.vercel.app/';
@@ -36,7 +38,11 @@ export default function WhyChooseUs() {
           title="Why Choose Us" 
           description="At KHM Logistics, we pride ourselves on delivering exceptional logistics solutions tailored to meet the unique needs of our clients. Our commitment to excellence, innovative technology, and experienced team ensure that your cargo is handled with the utmost care and efficiency. Choose us for reliable service, competitive pricing, and a partner dedicated to your success."         
           overlayOpacity={0.7}
-       />   
+       /> 
+
+       <WhyIntroSection/>
+       <WhyCoreValues/>
+      
     </>
   );
 }
