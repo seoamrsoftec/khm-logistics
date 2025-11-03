@@ -1,6 +1,7 @@
 import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
 import WhyCoreValues from "@/components/pages/WhyChooseUs/WhyCoreValues";
 import WhyIntroSection from "@/components/pages/WhyChooseUs/WhyIntroSection";
+import WhyPerformanceSection from "@/components/pages/WhyChooseUs/WhyPerformanceSection";
 
 export async function generateMetadata() {
     const siteUrl = 'https://khm-logistics.vercel.app/';
@@ -42,6 +43,7 @@ export default function WhyChooseUs() {
 
        <WhyIntroSection/>
        <WhyCoreValues/>
+       <WhyPerformanceSection/>
       
     </>
   );

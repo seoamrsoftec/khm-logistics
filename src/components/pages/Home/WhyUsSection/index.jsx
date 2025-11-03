@@ -22,7 +22,7 @@ const WhyUsSection = () => {
 
                 <div className={styles.imageBox}>
                     <Image
-                    src="/images/home/why-us/why-us.png"
+                    src="/images/home/why-us/why-us.webp"
                     alt="Why Us Image"
                     width={800}
                     height={800}
