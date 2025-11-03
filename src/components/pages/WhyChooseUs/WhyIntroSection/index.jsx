@@ -11,7 +11,7 @@ export default function WhyIntroSection() {
           {/* LEFT SIDE IMAGE */}
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/whyus/whyus-intro.jpg"
+              src="/images/why-choose-us/why-intro.webp"
               alt="KHM Logistics team at work"
               width={800}
               height={800}
