@@ -36,22 +36,22 @@ const servicebenefitsData = {
     subtitle: "Why Choose Our Expertise",
     benefits: [
       {
-        icon: "/images/services/supply-chain/real-time.svg",
+        icon: "/images/services/transloading/flexibility.svg",
         title: "Enhanced Supply Chain Flexibility",
         text: "Our transloading solutions enable smooth cargo transfers between transport modes, allowing you to adapt quickly to shifting routes, schedules, and customer demands.",
       },
       {
-        icon: "/images/services/supply-chain/efficacy.svg",
+        icon: "/images/services/transloading/efficacy.svg",
         title: "Reduced Shipping Costs",
         text: "By optimizing load transfers and minimizing idle time, we help reduce overall transportation expenses while improving speed and resource utilization.",
       },
       {
-        icon: "/images/services/supply-chain/reliability.svg",
+        icon: "/images/services/transloading/reliability.svg",
         title: "Strategic Facility Locations",
         text: "Our transloading hubs are strategically positioned near major ports, rail yards, and highways to streamline cargo movement and shorten delivery cycles.",
       },
       {
-        icon: "/images/services/supply-chain/tech.svg",
+        icon: "/images/services/transloading/tech.svg",
         title: "Real-Time Tracking & Control",
         text: "Stay informed with our advanced tracking systems that provide complete visibility, ensuring every cargo transfer is handled safely and efficiently.",
       },
