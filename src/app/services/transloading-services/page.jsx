@@ -2,7 +2,7 @@ import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
 import SiteCta from "@/components/pages/Common/SiteCta";
 import FaqSection from "@/components/pages/Common/FaqSection";
 import ServicesHero from "@/components/pages/Common/ServicesHero";
-
+import ServiceBenefits from "@/components/pages/Common/ServiceBenefits";
 export async function generateMetadata() {
     const siteUrl = 'https://khm-logistics.vercel.app/';
     const title = '';
@@ -31,6 +31,32 @@ export async function generateMetadata() {
    
     
 export default function Transloading() { 
+const servicebenefitsData = {
+    title: "Key Benefits of Our Transloading Management Services",
+    subtitle: "Why Choose Our Expertise",
+    benefits: [
+      {
+        icon: "/images/services/supply-chain/real-time.svg",
+        title: "Enhanced Supply Chain Flexibility",
+        text: "Our transloading solutions enable smooth cargo transfers between transport modes, allowing you to adapt quickly to shifting routes, schedules, and customer demands.",
+      },
+      {
+        icon: "/images/services/supply-chain/efficacy.svg",
+        title: "Reduced Shipping Costs",
+        text: "By optimizing load transfers and minimizing idle time, we help reduce overall transportation expenses while improving speed and resource utilization.",
+      },
+      {
+        icon: "/images/services/supply-chain/reliability.svg",
+        title: "Strategic Facility Locations",
+        text: "Our transloading hubs are strategically positioned near major ports, rail yards, and highways to streamline cargo movement and shorten delivery cycles.",
+      },
+      {
+        icon: "/images/services/supply-chain/tech.svg",
+        title: "Real-Time Tracking & Control",
+        text: "Stay informed with our advanced tracking systems that provide complete visibility, ensuring every cargo transfer is handled safely and efficiently.",
+      },
+    ],
+  };
 const transloadingFaqs = [
   {
     question: "What is transloading, and how does KHM Logistics perform it?",
@@ -129,7 +155,7 @@ const transloadingFaqs = [
             "At KHM Logistics, our flexible and scalable transloading solutions help businesses improve efficiency, minimize dwell time, and achieve seamless freight movement across the supply chain.",
           ]}
         />
-
+       <ServiceBenefits data={servicebenefitsData} />
        <div className="pt-[50px] lg:pt-[100px]">
             <FaqSection
               title="FAQs — Transloading Services"

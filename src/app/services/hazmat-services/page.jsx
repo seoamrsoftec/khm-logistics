@@ -2,6 +2,7 @@ import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
 import SiteCta from "@/components/pages/Common/SiteCta";
 import FaqSection from "@/components/pages/Common/FaqSection";
 import ServicesHero from "@/components/pages/Common/ServicesHero";
+import ServiceBenefits from "@/components/pages/Common/ServiceBenefits";
 
 export async function generateMetadata() {
     const siteUrl = 'https://khm-logistics.vercel.app/';
@@ -31,6 +32,33 @@ export async function generateMetadata() {
    
     
 export default function HazmatServices() { 
+const servicebenefitsData = {
+    title: "Key Benefits of Our Hazmat Management Services",
+    subtitle: "Why Choose Our Expertise",
+    benefits: [
+      {
+        icon: "/images/services/supply-chain/real-time.svg",
+        title: "Safety & Compliance Assurance",
+        text: "Our operations strictly adhere to global hazmat transport regulations, ensuring every shipment meets the highest safety and compliance standards from pickup to delivery.",
+      },
+      {
+        icon: "/images/services/supply-chain/efficacy.svg",
+        title: "Specialized Handling Efficiency",
+        text: "With certified personnel and advanced safety equipment, we ensure efficient, damage-free handling of hazardous materials across all transport modes.",
+      },
+      {
+        icon: "/images/services/supply-chain/reliability.svg",
+        title: "Reliable & Secure Transportation",
+        text: "Our secure hazmat transport solutions minimize risks and guarantee timely deliveries, backed by real-time tracking and contingency management systems.",
+      },
+      {
+        icon: "/images/services/supply-chain/tech.svg",
+        title: "Technology-Integrated Monitoring",
+        text: "Leverage smart tracking tools and automated reporting for complete shipment visibility, ensuring safety, traceability, and regulatory accuracy throughout the supply chain.",
+      },
+    ],
+  };
+
 const hazmatFaqs = [
   {
     question: "What are hazmat transportation services, and how does KHM Logistics handle them?",
@@ -129,7 +157,7 @@ const hazmatFaqs = [
             "At KHM Logistics, we combine expertise, reliability, and compliance-driven service to deliver safe and efficient Hazmat logistics solutions nationwide.",
           ]}
         />
-
+       <ServiceBenefits data={servicebenefitsData} />
        <div className="pt-[50px] lg:pt-[100px]">
             <FaqSection
               title="FAQs — Hazmat Services"

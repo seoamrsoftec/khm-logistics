@@ -2,6 +2,7 @@ import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
 import SiteCta from "@/components/pages/Common/SiteCta";
 import FaqSection from "@/components/pages/Common/FaqSection";
 import ServicesHero from "@/components/pages/Common/ServicesHero";
+import ServiceBenefits from "@/components/pages/Common/ServiceBenefits";
 
 export async function generateMetadata() {
     const siteUrl = 'https://khm-logistics.vercel.app/';
@@ -31,6 +32,32 @@ export async function generateMetadata() {
    
     
 export default function WarehouseServices() { 
+const servicebenefitsData = {
+    title: "Key Benefits of Our Warehouse Management Services",
+    subtitle: "Why Choose Our Expertise",
+    benefits: [
+      {
+        icon: "/images/services/supply-chain/real-time.svg",
+        title: "Advanced Storage Solutions",
+        text: "Our modern warehouses are equipped with climate control, safety systems, and optimized layouts to ensure secure and efficient storage for all types of goods.",
+      },
+      {
+        icon: "/images/services/supply-chain/efficacy.svg",
+        title: "Smart Inventory Management",
+        text: "With real-time inventory tracking and automated management systems, we enhance accuracy, reduce shrinkage, and streamline order fulfillment processes.",
+      },
+      {
+        icon: "/images/services/supply-chain/reliability.svg",
+        title: "Flexible & Scalable Capacity",
+        text: "Whether you need short-term overflow space or long-term distribution storage, our facilities scale easily with your business growth and seasonal demands.",
+      },
+      {
+        icon: "/images/services/supply-chain/tech.svg",
+        title: "Strategic Distribution Network",
+        text: "Our warehouses are strategically located near key ports, highways, and transport hubs, ensuring faster last-mile delivery and optimized logistics performance.",
+      },
+    ],
+  };
 const warehouseFaqs = [
   {
     question: "What warehousing services does KHM Logistics provide?",
@@ -129,7 +156,7 @@ const warehouseFaqs = [
             "KHM Logistics helps businesses streamline their warehousing and distribution processes, reduce operational costs, and improve overall supply chain performance across the United States.",
           ]}
           />
-
+        <ServiceBenefits data={servicebenefitsData} /> 
          <div className="pt-[50px] lg:pt-[100px]">
               <FaqSection
                 title="FAQs — Warehouse Services"

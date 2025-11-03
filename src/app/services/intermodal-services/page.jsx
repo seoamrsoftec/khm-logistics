@@ -2,6 +2,7 @@ import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
 import SiteCta from "@/components/pages/Common/SiteCta";
 import FaqSection from "@/components/pages/Common/FaqSection";
 import ServicesHero from "@/components/pages/Common/ServicesHero";
+import ServiceBenefits from "@/components/pages/Common/ServiceBenefits";
 
 export async function generateMetadata() {
     const siteUrl = 'https://khm-logistics.vercel.app/';
@@ -31,6 +32,32 @@ export async function generateMetadata() {
    
     
 export default function IntermodalServices() { 
+const servicebenefitsData = {
+    title: "Key Benefits of Our Intermodal Management Services",
+    subtitle: "Why Choose Our Expertise",
+    benefits: [
+      {
+        icon: "/images/services/supply-chain/real-time.svg",
+        title: "Seamless Mode Integration",
+        text: "We connect road, rail, air, and sea transport into one unified system, ensuring smooth transitions and consistent performance throughout your logistics network.",
+      },
+      {
+        icon: "/images/services/supply-chain/efficacy.svg",
+        title: "Cost & Time Efficiency",
+        text: "By optimizing route planning and leveraging multimodal flexibility, we reduce transit times, lower transportation costs, and maximize delivery efficiency.",
+      },
+      {
+        icon: "/images/services/supply-chain/reliability.svg",
+        title: "Eco-Friendly Transportation",
+        text: "Our intermodal solutions promote sustainability by minimizing fuel consumption and carbon emissions through efficient load consolidation and route optimization.",
+      },
+      {
+        icon: "/images/services/supply-chain/tech.svg",
+        title: "Reliable Tracking & Visibility",
+        text: "Gain end-to-end visibility with advanced digital tracking tools that monitor your shipments in real time across every mode of transport.",
+      },
+    ],
+  };
 const intermodalFaqs = [
   {
     question: "What are intermodal services, and how does KHM Logistics provide them?",
@@ -129,7 +156,7 @@ const intermodalFaqs = [
           "At KHM Logistics, we offer scalable and dependable intermodal solutions designed to support your business growth and deliver performance you can count on nationwide.",
           ]}
         />
-
+        <ServiceBenefits data={servicebenefitsData} />
        <div className="pt-[50px] lg:pt-[100px]">
             <FaqSection
               title="FAQs — Intermodal Services"
