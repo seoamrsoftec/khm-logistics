@@ -120,7 +120,7 @@ const transloadingFaqs = [
        <ServicesHero
           title="Transloading Services"
           description="KHM Logistics provides efficient and reliable transloading services that simplify the transfer of freight between different modes of transportation. Our goal is to help businesses reduce transit times, optimize costs, and maintain cargo integrity throughout the entire logistics process."
-          image="/images/services/supply-chain/supply-chain-hero.webp"
+          image="/images/transloading/transloading-sevice.png"
           alt="Transloading Services"
           paragraphs={[
             "Our transloading facilities are strategically located near major ports, rail terminals, and distribution centers, allowing us to manage inbound and outbound freight with speed and precision.",

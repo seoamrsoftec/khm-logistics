@@ -120,7 +120,7 @@ const intermodalFaqs = [
        <ServicesHero
           title="Intermodal Transportation Services"
           description="KHM Logistics delivers reliable intermodal transportation solutions that combine the efficiency of rail and the flexibility of trucking to move your freight safely, cost-effectively, and on time. Our multimodal approach ensures optimized routes and seamless coordination across every mode of transport."
-          image="/images/services/supply-chain/supply-chain-hero.webp"
+          image="/images/services/intermodal-service/intermodal.png"
           alt="Intermodal Transportation Services"
           paragraphs={[
           "We specialize in connecting rail, road, and port logistics to create a unified transportation network that enhances supply chain efficiency and reduces overall shipping costs.",
