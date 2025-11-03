@@ -9,25 +9,12 @@ import WhyPerformanceSection from "@/components/pages/WhyChooseUs/WhyPerformance
 
 export async function generateMetadata() {
     const siteUrl = 'https://khm-logistics.vercel.app/';
-    const title = '';
-    const description = '';
+    const title = 'Why Choose KHM Logistics – Trusted Trucking & Freight Partner in the USA';
+    const description = 'Discover why businesses across the USA trust KHM Logistics for dependable trucking, freight, and logistics solutions. From specialized equipment transport to on-time delivery, we’re committed to reliability, safety, and customer satisfaction every step of the way.';
     return {
         title, description,
         alternates: {
           canonical: `${siteUrl}`,
-        },
-        openGraph: {
-            title, description,
-            siteName: 'KHM Logistics',
-            images: [
-                {
-                url: `${siteUrl}/images/khm-og-image.jpg`,
-                width: 1200,
-                height: 630,
-                },
-            ],
-            locale: 'en_US',
-            type: 'website',
         },
       };
     }
@@ -132,6 +119,7 @@ export default function WhyChooseUs() {
        <div className="pt-[50px] lg:pt-[100px]">
         <StatsSection/>  
        </div>
+
        <FaqSection
           title="FAQs — Why Choose Us"
           description="At KHM Logistics, we understand that choosing the right logistics partner is a crucial decision for your business. Our commitment to reliability, transparency, and customer-focused service sets us apart. Explore these frequently asked questions to learn more about what makes KHM Logistics the trusted choice for seamless transportation and supply chain solutions across the USA."
