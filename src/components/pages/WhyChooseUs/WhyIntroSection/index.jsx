@@ -13,8 +13,8 @@ export default function WhyIntroSection() {
             <Image
               src="/images/whyus/whyus-intro.jpg"
               alt="KHM Logistics team at work"
-              width={600}
-              height={500}
+              width={800}
+              height={800}
               className={styles.image}
             />
           </div>

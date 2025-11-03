@@ -6,17 +6,17 @@ import Container from "@/components/sections/Container";
 export default function WhyCoreValues() {
   const values = [
     {
-      icon: "/images/icons/efficiency.svg",
+      icon: "/images/why-choose-us/operational.svg",
       title: "Operational Efficiency",
       text: "We optimize every route, process, and touchpoint to ensure time-bound and cost-efficient deliveries — helping businesses operate seamlessly.",
     },
     {
-      icon: "/images/icons/safety.svg",
+      icon: "/images/why-choose-us/safety.svg",
       title: "Safety & Compliance",
       text: "KHM Logistics is built on strict adherence to international safety standards, especially in handling hazmat and high-value cargo.",
     },
     {
-      icon: "/images/icons/innovation.svg",
+      icon: "/images/why-choose-us/innovation.svg",
       title: "Continuous Innovation",
       text: "From automated tracking systems to AI-based freight optimization, innovation drives our service excellence and client satisfaction.",
     },
@@ -43,8 +43,8 @@ export default function WhyCoreValues() {
                         <Image
                         src={item.icon}
                         alt={item.title}
-                        width={64}
-                        height={64}
+                        width={100}
+                        height={100}
                         className={styles.icon}
                         />
                     </div>
