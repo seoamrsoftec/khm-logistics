@@ -37,22 +37,22 @@ const servicebenefitsData = {
     subtitle: "Why Choose Our Expertise",
     benefits: [
       {
-        icon: "/images/services/supply-chain/real-time.svg",
+        icon: "/images/services/warehouse-service/business-intelligence.svg",
         title: "Advanced Storage Solutions",
         text: "Our modern warehouses are equipped with climate control, safety systems, and optimized layouts to ensure secure and efficient storage for all types of goods.",
       },
       {
-        icon: "/images/services/supply-chain/efficacy.svg",
+        icon: "/images/services/warehouse-service/management.svg",
         title: "Smart Inventory Management",
         text: "With real-time inventory tracking and automated management systems, we enhance accuracy, reduce shrinkage, and streamline order fulfillment processes.",
       },
       {
-        icon: "/images/services/supply-chain/reliability.svg",
+        icon: "/images/services/warehouse-service/capacity.svg",
         title: "Flexible & Scalable Capacity",
         text: "Whether you need short-term overflow space or long-term distribution storage, our facilities scale easily with your business growth and seasonal demands.",
       },
       {
-        icon: "/images/services/supply-chain/tech.svg",
+        icon: "/images/services/warehouse-service/network.svg",
         title: "Strategic Distribution Network",
         text: "Our warehouses are strategically located near key ports, highways, and transport hubs, ensuring faster last-mile delivery and optimized logistics performance.",
       },
