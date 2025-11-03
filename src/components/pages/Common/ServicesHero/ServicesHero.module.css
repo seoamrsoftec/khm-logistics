@@ -1,17 +1,9 @@
-.servicesHero {
-    padding: 80px 0;
-    background-color: #fff;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  .mainWrapper {   
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px;
-    padding: 0 20px;
+    gap: 40px;   
   }
   
   /* IMAGE SIDE */
@@ -31,9 +23,9 @@
     transition: transform 0.6s ease;
   }
   
-  .imageWrapper:hover .image {
+  /* .imageWrapper:hover .image {
     transform: scale(1.03);
-  }
+  } */
   
   /* CONTENT SIDE */
   .content {

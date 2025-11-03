@@ -132,17 +132,17 @@ export default function Footer() {
                             </Link>
                           </li>
                           <li>
-                            <Link href="/lcl-sydney">
+                            <Link href="'/services/warehouse-services">
                             Warehouse Services
                             </Link>
                           </li>
                           <li>
-                            <Link href="/#">
+                            <Link href="/services/intermodal-services">
                             Intermodal Services
                             </Link>
                           </li>
                           <li>
-                            <Link href="/#">
+                            <Link href="/services/hazmat-services">
                             Hazmat Services
                             </Link>
                           </li>

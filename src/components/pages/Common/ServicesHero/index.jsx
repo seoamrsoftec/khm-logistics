@@ -1,11 +1,13 @@
 "use client";
+import Container from "@/components/sections/Container";
 import styles from "./ServicesHero.module.css";
 import Image from "next/image";
 
 const ServicesHero = ({ title, description, paragraphs = [], image, alt }) => {
   return (
-    <section className={styles.servicesHero}>
-      <div className={styles.container}>
+    <section className="py-[50px] lg:py-[100px]" >
+      <Container>
+      <div className={styles.mainWrapper}>
         {/* LEFT IMAGE */}
         <div className={styles.imageWrapper}>
           <Image
@@ -34,6 +36,7 @@ const ServicesHero = ({ title, description, paragraphs = [], image, alt }) => {
           )}
         </div>
       </div>
+      </Container>
     </section>
   );
 };

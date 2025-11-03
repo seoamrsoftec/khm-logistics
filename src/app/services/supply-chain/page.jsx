@@ -36,22 +36,22 @@ export default function SupplyChain() {
     subtitle: "Why Choose Our Expertise",
     benefits: [
       {
-        icon: "/images/services/supply-chain/benefit1.png",
+        icon: "/images/services/supply-chain/real-time.svg",
         title: "Real-Time Visibility",
         text: "Gain full transparency across every supply chain process with our advanced tracking and analytics systems, ensuring smooth coordination and quick responses.",
       },
       {
-        icon: "/images/services/supply-chain/benefit1.png",
+        icon: "/images/services/supply-chain/efficacy.svg",
         title: "Optimized Efficiency",
         text: "We streamline sourcing, warehousing, and distribution to cut costs, enhance delivery speeds, and maintain operational precision at every stage.",
       },
       {
-        icon: "/images/services/supply-chain/benefit1.png",
+        icon: "/images/services/supply-chain/reliability.svg",
         title: "Reliable Operations",
         text: "With proactive planning and an experienced logistics team, we ensure consistent, on-time performance and long-term client satisfaction.",
       },
       {
-        icon: "/images/services/supply-chain/benefit1.png",
+        icon: "/images/services/supply-chain/tech.svg",
         title: "Technology-Driven Approach",
         text: "Our data-driven automation tools and smart logistics technologies adapt to your business growth and changing global supply demands.",
       },
@@ -158,7 +158,7 @@ const supplychainFaqs = [
             "From warehousing and inventory management to transport coordination, we cover every stage of your logistics journey.",
           ]}
         />
-        {/* <ServiceBenefits data={servicebenefitsData} /> */}
+        <ServiceBenefits data={servicebenefitsData} />
         <div className="pt-[50px] lg:pt-[100px]">
             <FaqSection
               title="FAQs — Supply Chain Services"
