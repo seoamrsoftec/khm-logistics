@@ -52,7 +52,7 @@ const servicebenefitsData = {
     text: "Through reinforced containment measures and well-planned routes, we guarantee safe, reliable, and timely movement of hazardous cargo while minimizing potential risks.",
   },
   {
-    icon: "/images/services/hazmat-service/ai.svg",
+    icon: "/images/services/hazmat-service/digital.svg",
     title: "Digital Oversight",
     text: "Gain complete shipment visibility with real-time tracking, automated alerts, and data-driven compliance monitoring to ensure accountability at every stage of the journey.",
   },
