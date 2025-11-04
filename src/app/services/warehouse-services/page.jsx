@@ -35,28 +35,28 @@ export default function WarehouseServices() {
 const servicebenefitsData = {
     title: "Key Benefits of Our Warehouse Management Services",
     subtitle: "Why Choose Our Expertise",
-    benefits: [
-      {
-        icon: "/images/services/warehouse-service/business-intelligence.svg",
-        title: "Advanced Storage Solutions",
-        text: "Our modern warehouses are equipped with climate control, safety systems, and optimized layouts to ensure secure and efficient storage for all types of goods.",
-      },
-      {
-        icon: "/images/services/warehouse-service/management.svg",
-        title: "Smart Inventory Management",
-        text: "With real-time inventory tracking and automated management systems, we enhance accuracy, reduce shrinkage, and streamline order fulfillment processes.",
-      },
-      {
-        icon: "/images/services/warehouse-service/capacity.svg",
-        title: "Flexible & Scalable Capacity",
-        text: "Whether you need short-term overflow space or long-term distribution storage, our facilities scale easily with your business growth and seasonal demands.",
-      },
-      {
-        icon: "/images/services/warehouse-service/network.svg",
-        title: "Strategic Distribution Network",
-        text: "Our warehouses are strategically located near key ports, highways, and transport hubs, ensuring faster last-mile delivery and optimized logistics performance.",
-      },
-    ],
+   benefits: [
+  {
+    icon: "/images/services/warehouse-service/storage.svg",
+    title: "Secure Storage",
+    text: "Our warehouses are equipped with advanced climate systems, fire protection, and 24/7 surveillance to ensure your products remain safe, organized, and well-preserved.",
+  },
+  {
+    icon: "/images/services/warehouse-service/tracking.svg",
+    title: "Smart Tracking",
+    text: "We utilize real-time digital inventory tools that improve accuracy, prevent stockouts, and help you monitor every item across multiple warehouse locations effortlessly.",
+  },
+  {
+    icon: "/images/services/warehouse-service/scalability.svg",
+    title: "Scalable Space",
+    text: "From seasonal surges to expanding product lines, our warehousing solutions easily scale to meet your business capacity needs without compromising efficiency.",
+  },
+  {
+    icon: "/images/services/warehouse-service/planning.svg",
+    title: "Strategic Access",
+    text: "Our facilities are positioned near major transport corridors and ports, enabling faster distribution, optimized route planning, and reduced delivery times.",
+  },
+],
   };
 const warehouseFaqs = [
   {

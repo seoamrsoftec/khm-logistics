@@ -37,22 +37,22 @@ const servicebenefitsData = {
     subtitle: "Why Choose Our Expertise",
     benefits: [
       {
-        icon: "/images/services/supply-chain/real-time.svg",
+        icon: "/images/services/intermodal-service/integration.svg",
         title: "Seamless Mode Integration",
         text: "We connect road, rail, air, and sea transport into one unified system, ensuring smooth transitions and consistent performance throughout your logistics network.",
       },
       {
-        icon: "/images/services/supply-chain/efficacy.svg",
+        icon: "/images/services/intermodal-service/cost.svg",
         title: "Cost & Time Efficiency",
         text: "By optimizing route planning and leveraging multimodal flexibility, we reduce transit times, lower transportation costs, and maximize delivery efficiency.",
       },
       {
-        icon: "/images/services/supply-chain/reliability.svg",
+        icon: "/images/services/intermodal-service/delivery-truck.svg",
         title: "Eco-Friendly Transportation",
         text: "Our intermodal solutions promote sustainability by minimizing fuel consumption and carbon emissions through efficient load consolidation and route optimization.",
       },
       {
-        icon: "/images/services/supply-chain/tech.svg",
+        icon: "/images/services/intermodal-service/live-tracking.svg",
         title: "Reliable Tracking & Visibility",
         text: "Gain end-to-end visibility with advanced digital tracking tools that monitor your shipments in real time across every mode of transport.",
       },

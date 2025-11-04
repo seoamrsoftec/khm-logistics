@@ -36,27 +36,27 @@ const servicebenefitsData = {
     title: "Key Benefits of Our Hazmat Management Services",
     subtitle: "Why Choose Our Expertise",
     benefits: [
-      {
-        icon: "/images/services/supply-chain/real-time.svg",
-        title: "Safety & Compliance Assurance",
-        text: "Our operations strictly adhere to global hazmat transport regulations, ensuring every shipment meets the highest safety and compliance standards from pickup to delivery.",
-      },
-      {
-        icon: "/images/services/supply-chain/efficacy.svg",
-        title: "Specialized Handling Efficiency",
-        text: "With certified personnel and advanced safety equipment, we ensure efficient, damage-free handling of hazardous materials across all transport modes.",
-      },
-      {
-        icon: "/images/services/supply-chain/reliability.svg",
-        title: "Reliable & Secure Transportation",
-        text: "Our secure hazmat transport solutions minimize risks and guarantee timely deliveries, backed by real-time tracking and contingency management systems.",
-      },
-      {
-        icon: "/images/services/supply-chain/tech.svg",
-        title: "Technology-Integrated Monitoring",
-        text: "Leverage smart tracking tools and automated reporting for complete shipment visibility, ensuring safety, traceability, and regulatory accuracy throughout the supply chain.",
-      },
-    ],
+  {
+    icon: "/images/services/hazmat-service/safety.svg",
+    title: "Safety Assurance",
+    text: "We maintain strict adherence to international hazardous materials transport standards, ensuring every shipment is handled with maximum care, safety, and regulatory compliance from origin to destination.",
+  },
+  {
+    icon: "/images/services/hazmat-service/expert.svg",
+    title: "Expert Handling",
+    text: "Our certified hazmat professionals use advanced protective gear and specialized equipment to ensure secure, damage-free handling across all modes of transport.",
+  },
+  {
+    icon: "/images/services/hazmat-service/security.svg",
+    title: "Secure Transit",
+    text: "Through reinforced containment measures and well-planned routes, we guarantee safe, reliable, and timely movement of hazardous cargo while minimizing potential risks.",
+  },
+  {
+    icon: "/images/services/hazmat-service/ai.svg",
+    title: "Digital Oversight",
+    text: "Gain complete shipment visibility with real-time tracking, automated alerts, and data-driven compliance monitoring to ensure accountability at every stage of the journey.",
+  },
+],
   };
 
 const hazmatFaqs = [
