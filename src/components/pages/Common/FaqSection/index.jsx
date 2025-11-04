@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import styles from "./FaqSection.module.css";
 import Container from "@/components/sections/Container";
+import SectionTitle from "@/components/sections/SectionTitle";
 
 export default function FaqSection({
   title = "Frequently Asked Questions",
@@ -31,7 +32,8 @@ export default function FaqSection({
               priority
             />
             <div className={styles.leftContent}>
-              <h2 className={styles.title}>{title}</h2>
+              {/* <h2 className={styles.title}>{title}</h2> */}
+              <SectionTitle title={title} />
               <p className={styles.desc}>{description}</p>
             </div>
           </div>

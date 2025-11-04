@@ -2,6 +2,7 @@
 import styles from "./WhyIntroSection.module.css";
 import Image from "next/image";
 import Container from "@/components/sections/Container";
+import SectionTitle from "@/components/sections/SectionTitle";
 
 export default function WhyIntroSection() {
   return (
@@ -22,9 +23,10 @@ export default function WhyIntroSection() {
           {/* RIGHT SIDE CONTENT */}
           <div className={styles.content}>
             <p className={styles.tagline}>Precision. Reliability. Partnership.</p>
-            <h2 className={styles.title}>
+            {/* <h2 className={styles.title}>
               Why Businesses Trust <span>KHM Logistics</span>
-            </h2>
+            </h2> */}
+              <SectionTitle title="Why Businesses Trust KHM Logistics" />
             <p className={styles.text}>
               At <strong>KHM Logistics</strong>, we don’t just move cargo — we move
               businesses forward. Our approach combines modern logistics intelligence

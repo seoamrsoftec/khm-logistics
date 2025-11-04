@@ -2,6 +2,7 @@
 import styles from "./WhyCoreValues.module.css";
 import Image from "next/image";
 import Container from "@/components/sections/Container";
+import SectionTitle from "@/components/sections/SectionTitle";
 
 export default function WhyCoreValues() {
   const values = [
@@ -28,9 +29,10 @@ export default function WhyCoreValues() {
             <Container>
                 <div className={styles.header}>
                 <p className={styles.subtitle}>Core Principles</p>
-                <h2 className={styles.title}>
+                {/* <h2 className={styles.title}>
                     Our <span>Commitment</span> to Excellence
-                </h2>
+                </h2> */}
+                <SectionTitle title="Our Commitment to Excellence"/>
                 <p className={styles.desc}>
                     Every shipment, client, and partnership is guided by principles that make KHM Logistics a trusted logistics partner across industries.
                 </p>

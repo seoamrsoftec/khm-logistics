@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Container from "@/components/sections/Container";
+import SectionTitle from "@/components/sections/SectionTitle";
 
 export default function Contactform() {
   const [formData, setFormData] = useState({
@@ -27,9 +28,10 @@ export default function Contactform() {
         <div className="flex flex-col w-full lg:flex-row items-start justify-between gap-12 lg:gap-16">
           <div className="w-full lg:w-1/2 space-y-10">
            <div className="w-full text-center md:text-start md:px-2">
-              <h2 className="text-[30px] font-bold text-[var(--primary)] mb-4">
+              {/* <h2 className="text-[30px] font-bold text-[var(--primary)] mb-4">
                 Get in Touch
-              </h2>
+              </h2> */}
+              <SectionTitle title="Get in Touch" />
               <p className="text-gray-600 leading-relaxed text-lg max-w-xl mx-auto md:mx-0">
                 Have questions about our{" "}
                 <strong>Drayage Services</strong>,{" "}

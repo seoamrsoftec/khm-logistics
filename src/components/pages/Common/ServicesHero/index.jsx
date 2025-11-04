@@ -2,6 +2,7 @@
 import Container from "@/components/sections/Container";
 import styles from "./ServicesHero.module.css";
 import Image from "next/image";
+import SectionTitle from "@/components/sections/SectionTitle";
 
 const ServicesHero = ({ title, description, paragraphs = [], image, alt }) => {
   return (
@@ -22,7 +23,8 @@ const ServicesHero = ({ title, description, paragraphs = [], image, alt }) => {
 
         {/* RIGHT CONTENT */}
         <div className={styles.content}>
-          <h2 className={styles.title}>{title}</h2>
+          {/* <h2 className={styles.title}>{title}</h2> */}
+          <SectionTitle title={title} />
           <p className={styles.description}>{description}</p>
 
           {paragraphs?.length > 0 && (

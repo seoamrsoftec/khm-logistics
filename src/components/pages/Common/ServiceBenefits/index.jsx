@@ -2,6 +2,7 @@
 import Container from "@/components/sections/Container";
 import styles from "./ServiceBenefits.module.css";
 import Image from "next/image";
+import SectionTitle from "@/components/sections/SectionTitle";
 
 export default function ServiceBenefits({ data }) {
   const { title, subtitle, benefits } = data;
@@ -13,7 +14,8 @@ export default function ServiceBenefits({ data }) {
       <Container>
         <div className={styles.header}>
           {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
-          {title && <h2 className={styles.title}>{title}</h2>}
+          {/* {title && <h2 className={styles.title}>{title}</h2>} */}
+          <SectionTitle title={title}/>
         </div>
 
         <div className={styles.grid}>
