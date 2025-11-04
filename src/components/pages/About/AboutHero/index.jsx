@@ -2,6 +2,7 @@
 import Image from "next/image";
 import styles from "./AboutHero.module.css";
 import Container from "@/components/sections/Container";
+import SectionTitle from "@/components/sections/SectionTitle";
 
 export default function AboutHero() {
   return (
@@ -23,9 +24,7 @@ export default function AboutHero() {
           {/* CONTENT SIDE */}
           <div className={styles.contentSide}>
             <span className={styles.label}>About Us</span>
-            <h2 className={styles.title}>
-              Reliable & Specialized Logistics Across the USA
-            </h2>
+             <SectionTitle title=" Reliable & Specialized Logistics Across the USA" />
             <p className={styles.text}>
               At <strong>KHM Logistics</strong>, we deliver reliable and flexible{" "}
               <strong>trucking services across the USA</strong> — ensuring that

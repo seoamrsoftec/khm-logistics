@@ -4,6 +4,7 @@ import styles from "./StatsSection.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/sections/Container";
+import SectionTitle from "@/components/sections/SectionTitle";
 
 const StatsSection = () => {
   const [stats, setStats] = useState({ customers: 0, loads: 0, clients: 0 });
@@ -47,15 +48,22 @@ const StatsSection = () => {
 
   return (
     <section className="pb-[50px] lg:pb-[100px]" ref={sectionRef}>
-      <div className={styles.statsSection} aria-labelledby="stats-section-heading">
+      <div
+        className={styles.statsSection}
+        aria-labelledby="stats-section-heading"
+      >
         <div className={styles.overlay}></div>
         <div className={styles.container}>
           <div className={styles.left}>
             <p className={styles.smallText}>Number Talks</p>
-            <h2 className={styles.title}>
-              Top-Rated Drayage <br /> Trucking in the USA <br /> by{" "}
-              <span>KHM Logistics</span>
-            </h2>
+            <SectionTitle
+              title={
+                <>
+                  Top-Rated Drayage <br /> Trucking in the USA <br /> by{" "}
+                  <span>KHM Logistics</span>
+                </>
+              }
+            />
             <Link href="/why-choose-us" className={styles.button}>
               Get Our Story
             </Link>

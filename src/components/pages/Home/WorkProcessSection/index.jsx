@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "./WorkProcessSection.module.css";
 import Container from "@/components/sections/Container";
+import SectionTitle from "@/components/sections/SectionTitle";
 
 const steps = [
   {
@@ -43,9 +44,7 @@ export default function WorkProcessSection() {
     >
       <Container>
         <div className={styles.topIntro}>
-          <h2 id="work-process-heading" className={styles.heading}>
-            Logistics Workflow
-          </h2>
+          <SectionTitle title=" Logistics Workflow" />
         </div>
 
         <div className={styles.canvas}>

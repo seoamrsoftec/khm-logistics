@@ -25,6 +25,7 @@ export default function WhyIntroSection() {
             <h2 className={styles.title}>
               Why Businesses Trust <span>KHM Logistics</span>
             </h2>
+              <SectionTitle title="Why Businesses Trust <span>KHM Logistics</span>" />
             <p className={styles.text}>
               At <strong>KHM Logistics</strong>, we don’t just move cargo — we move
               businesses forward. Our approach combines modern logistics intelligence

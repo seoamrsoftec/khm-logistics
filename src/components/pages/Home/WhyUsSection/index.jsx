@@ -2,6 +2,7 @@
 import Container from "@/components/sections/Container";
 import styles from "./WhyUsSection.module.css";
 import Image from "next/image";
+import SectionTitle from "@/components/sections/SectionTitle";
 
 const WhyUsSection = () => {
   return (
@@ -11,7 +12,7 @@ const WhyUsSection = () => {
                 {/* LEFT SIDE: CONTENT */}
                 <div className={styles.left}>
                 <p className={styles.smallHeading}>Why Choose Us</p>
-                <h2 className={styles.title}>Go With Our Specializations</h2>
+                <SectionTitle title="Go With Our Specializations" />
                 <p className={styles.text}>
                     Ready to optimize your freight flow? Contact <strong>KHM Logistics</strong>. 
                     Our team ensures compliance with standards across borders, following insights 

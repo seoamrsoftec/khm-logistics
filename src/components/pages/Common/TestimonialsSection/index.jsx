@@ -5,6 +5,7 @@ import "swiper/css";
 import styles from "./TestimonialsSection.module.css";
 import Image from "next/image";
 import Container from "@/components/sections/Container";
+import SectionTitle from "@/components/sections/SectionTitle";
 
 const testimonials = [
   {
@@ -60,7 +61,7 @@ export default function TestimonialsSection() {
                 <div className="">
                     <div className={styles.header}>
                     <span className={styles.label}>Testimonials</span>
-                    <h2 className={styles.title}>What Our Clients Say</h2>
+                    <SectionTitle title="What Our Clients Say" />
                     </div>
 
                     <Swiper
