@@ -89,7 +89,7 @@ const Navigation = [
                             </li>
                         ))}
                         <li className={styles.NavigationLi}>
-                            <Link href="/contact-us" className='btn'>
+                            <Link href="/contact" className='btn'>
                                 <span>Get a Quote</span>
                             </Link>
                         </li>
