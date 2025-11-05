@@ -9,7 +9,7 @@ export const metadata = {
   description:
     "Maximize efficiency with KHM Logistics’ intermodal transport services. We combine multiple transport modes for cost-effective, eco-friendly logistics across regions.",
 };
-
+ 
     
 export default function IntermodalServices() { 
 const servicebenefitsData = {

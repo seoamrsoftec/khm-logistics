@@ -24,11 +24,11 @@ export default function ThankYou() {
       <div className="relative z-10 max-w-xl bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl p-10 shadow-2xl">
         <div className="flex justify-center  mb-6">
           <Image
-            src="/images/logo/logo-final.png"
+            src="/images/thankyou/namaste.gif"
             alt="Success Icon"
-            width={100}
-            height={100}
-            className="drop-shadow-2xl bg-white p-2 rounded-sm "
+            width={130}
+            height={130}
+            className="drop-shadow-2xl bg-white rounded-full "
             priority
           />
         </div>
