@@ -3,32 +3,13 @@ import SiteCta from "@/components/pages/Common/SiteCta";
 import FaqSection from "@/components/pages/Common/FaqSection";
 import ServicesHero from "@/components/pages/Common/ServicesHero";
 import ServiceBenefits from "@/components/pages/Common/ServiceBenefits";
-export async function generateMetadata() {
-  const siteUrl = "https://khm-logistics.vercel.app/";
-  const title = "";
-  const description = "";
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: `${siteUrl}`,
-    },
-    openGraph: {
-      title,
-      description,
-      siteName: "KHM Logistics",
-      images: [
-        {
-          url: `${siteUrl}/images/khm-og-image.jpg`,
-          width: 1200,
-          height: 630,
-        },
-      ],
-      locale: "en_US",
-      type: "website",
-    },
-  };
-}
+
+export const metadata = {
+  title: "Transloading Services | KHM Logistics - Fast & Flexible Freight Handling",
+  description:
+    "KHM Logistics offers professional transloading services for efficient cargo transfer between transport modes. Save time and reduce costs with our expert team.",
+};
+
 
 export default function Transloading() {
   const servicebenefitsData = {

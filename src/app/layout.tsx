@@ -5,8 +5,8 @@ import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
 
 export const metadata = {
-  title: `My Cab Portal - Taxi Service Website at Rs 1000 a Month Only`,
-  description: `Get your taxi service website with My Cab Portal for just ₹1000/month! Create your professional taxi booking website in just 5 easy steps. Fast, affordable, and hassle-free!`,
+  title: `KHM Logistics - Reliable Freight and Logistics Solutions`,
+  description: ` KHM Logistics offers dependable freight and logistics services, ensuring your cargo reaches its destination safely and on time. Trust us for all your shipping needs.`,
   // Other metadata...
 };
 

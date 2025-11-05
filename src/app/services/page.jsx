@@ -3,32 +3,12 @@ import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
 import SiteCta from "@/components/pages/Common/SiteCta";
 import ServiceSection from "@/components/pages/Home/ServiceSection";
 
-export async function generateMetadata() {
-    const siteUrl = 'https://khm-logistics.vercel.app/';
-    const title = '';
-    const description = '';
-    return {
-        title, description,
-        alternates: {
-          canonical: `${siteUrl}`,
-        },
-        openGraph: {
-            title, description,
-            siteName: 'KHM Logistics',
-            images: [
-                {
-                url: `${siteUrl}/images/khm-og-image.jpg`,
-                width: 1200,
-                height: 630,
-                },
-            ],
-            locale: 'en_US',
-            type: 'website',
-        },
-      };
-    }
-  
-   
+export const metadata = {
+  title: "Our Services | KHM Logistics - Complete Logistics & Freight Solutions",
+  description:
+    "Explore KHM Logistics’ full range of services including warehousing, intermodal transport, transloading, and hazardous material logistics. We ensure smooth operations from pickup to delivery.",
+};
+
     
 export default function Services() { 
      const servicesFaqs = [

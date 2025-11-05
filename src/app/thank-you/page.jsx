@@ -1,7 +1,12 @@
-"use client";
 
 import Image from "next/image";
 import Link from "next/link";
+
+export async function generateMetadata() {
+    const siteUrl = 'https://khm-logistics.vercel.app/';
+    const title = 'Thank You - KHM Logistics';
+    const description = 'Thank you for reaching out to KHM Logistics. Your inquiry has been successfully submitted. Our team will connect with you soon.';
+}
 
 export default function ThankYou() {  
   return (

@@ -2,32 +2,12 @@
 import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
 import ContactHeroSec from "@/components/pages/contact/ContactHeroSec";
 
-export async function generateMetadata() {
-  const siteUrl = "https://khm-logistics.vercel.app/";
-  const title = "";
-  const description = "";
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: `${siteUrl}`,
-    },
-    openGraph: {
-      title,
-      description,
-      siteName: "KHM Logistics",
-      images: [
-        {
-          url: `${siteUrl}/images/khm-og-image.jpg`,
-          width: 1200,
-          height: 630,
-        },
-      ],
-      locale: "en_US",
-      type: "website",
-    },
-  };
-}
+export const metadata = {
+  title: "Contact Us | KHM Logistics - Get in Touch Today",
+  description:
+    "Have questions or need a quote? Contact KHM Logistics today for professional logistics, warehousing, and supply chain solutions tailored to your needs.",
+};
+
 
 export default function Contact() {
   return (

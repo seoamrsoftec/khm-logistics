@@ -4,33 +4,11 @@ import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
 import TestimonialsSection from "@/components/pages/Common/TestimonialsSection";
 import StatsSection from "@/components/pages/Home/StatsSection";
 
-
-export async function generateMetadata() {
-    const siteUrl = 'https://khm-logistics.vercel.app/';
-    const title = '';
-    const description = '';
-    return {
-        title, description,
-        alternates: {
-          canonical: `${siteUrl}`,
-        },
-        openGraph: {
-            title, description,
-            siteName: 'KHM Logistics',
-            images: [
-                {
-                url: `${siteUrl}/images/khm-og-image.jpg`,
-                width: 1200,
-                height: 630,
-                },
-            ],
-            locale: 'en_US',
-            type: 'website',
-        },
-      };
-    }
-  
-   
+export const metadata = {
+  title: "About Us | KHM Logistics - Trusted Logistics & Supply Chain Partner",
+  description:
+    "Learn about KHM Logistics, a trusted name in logistics and supply chain management. We deliver excellence in transportation, warehousing, and freight solutions tailored to your business needs.",
+};
     
 export default function About() {
   const aboutFaqs = [
