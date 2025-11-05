@@ -9,18 +9,16 @@ export async function GET() {
     const appDir = path.join(process.cwd(), "src", "app");
     const today = new Date().toISOString().split("T")[0];
 
-    // ✅ 1. Get static pages
     const staticRoutes = getAllPages(appDir);
 
-    // ✅ 2. Map to XML-friendly format
     const allUrls = staticRoutes.map((route) => ({
       loc: `${baseUrl}${route}`,
       lastmod: today,
       priority: route === "/" ? "1.0" : "0.7",
     }));
 
-    // ✅ 3. Build XML
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${allUrls
   .map(
@@ -44,7 +42,6 @@ ${allUrls
   }
 }
 
-// ✅ Recursive function to get all static routes
 function getAllPages(dir, routePrefix = "") {
   if (!fs.existsSync(dir)) return [];
 

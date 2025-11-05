@@ -11,7 +11,7 @@ export async function generateMetadata() {
 export default function ThankYou() {  
   return (
     <section
-      className="relative flex flex-col items-center justify-center pb-[100px] pt-[200px] text-center text-white overflow-hidden"
+      className="relative flex flex-col items-center px-5 lg:px-0 justify-center h-[100vh] mt-[50px] text-center text-white overflow-hidden"
       style={{
         backgroundImage: `url('/images/thankyou/thankyou.webp')`, 
         backgroundSize: "cover",
