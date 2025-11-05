@@ -16,10 +16,10 @@ export async function GET() {
               h1 { color: #000000; }
               p.count { margin-top: ; color: #555; font-size: 14px; }
               p.expl { color: #555; font-size: 14px; }
-              a { color: #38aaeb; text-decoration: none; font-weight: bold; }
+              a { color: #0e7e99; text-decoration: none; font-weight: bold; }
               table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
               th, td { font-size: 11px; padding: 4px; border: 1px solid #ddd; text-align: left; }
-              th { background-color: #38aaeb; color: white; } 
+              th { background-color: #0e7e99; color: white; } 
               tr:nth-child(even) { background-color: #f2f2f2; }
               tr:hover { background-color: #c7e0ef; }
               td a { font-size: 11px; font-weight: normal; color: #000000; text-decoration: none; }
