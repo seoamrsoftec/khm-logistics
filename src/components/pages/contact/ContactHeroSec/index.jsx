@@ -2,8 +2,9 @@
 import { useState } from "react";
 import Container from "@/components/sections/Container";
 import SectionTitle from "@/components/sections/SectionTitle";
+import ContactForm from "../../Common/ContactForm";
 
-export default function Contactform() {
+export default function ContactHeroSec() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -78,11 +79,11 @@ export default function Contactform() {
           </div>
 
           <div className="w-full lg:w-1/2 bg-[var(--white)] shadow-[0_4px_25px_rgba(0,0,0,0.08)] rounded-2xl p-6 sm:p-8 md:p-10">
-            <h3 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-[var(--primary)]">
+            {/* <h3 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-[var(--primary)]">
               Connect With Our Logistics Team
-            </h3>
+            </h3> */}
 
-            <form onSubmit={handleSubmit} className="space-y-5">
+            {/* <form onSubmit={handleSubmit} className="space-y-5">
               <input
                 type="text"
                 name="name"
@@ -137,7 +138,8 @@ export default function Contactform() {
               >
                 Submit Inquiry
               </button>
-            </form>
+            </form> */}
+            <ContactForm/>
           </div>
         </div>
       </Container>

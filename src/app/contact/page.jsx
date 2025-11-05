@@ -1,5 +1,6 @@
-import Contactform from "@/components/pages/contact/contact-form";
+
 import HeroBannerCommon from "@/components/pages/Common/HeroBannerCommon";
+import ContactHeroSec from "@/components/pages/contact/ContactHeroSec";
 
 export async function generateMetadata() {
   const siteUrl = "https://khm-logistics.vercel.app/";
@@ -38,7 +39,7 @@ export default function Contact() {
         overlayOpacity={0.7}
       />
 
-      <Contactform />
+      <ContactHeroSec/>
     </>
   );
 }
